@@ -2,13 +2,21 @@
  * Typography
  */
 
+$family-sans-serif: sans-serif;
 $family-serif: 'Cormorant Garamond', serif;
-$font-size: 21px;
+$font-size: 22px;
 
 /** Default font settings */
 body {
   font-family: $family-serif;
   font-size: $font-size;
+  line-height: 1.5em;
+}
+
+/** Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $family-sans-serif;
+  letter-spacing: -.5px;
 }
 
 /** Links */
@@ -24,4 +32,7 @@ a {
 /** Code-related blocks */
 tt, code, kbd, samp {
   font-size: .85em;
+}
+pre code {
+  font-size: 1em;
 }
