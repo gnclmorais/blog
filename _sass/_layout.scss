@@ -1,0 +1,33 @@
+/**
+ * Layout
+ */
+
+body {
+  margin: 0;
+}
+
+/** Page header */
+.site-header {
+}
+
+/** Page content */
+.page-content {
+}
+
+/** Page footer */
+.site-footer {
+}
+
+/** Content wrapping */
+p {
+  @include content-wrap;
+}
+
+/** Code-related blocks */
+.highlight {
+  margin: 0;
+
+  pre {
+    @include content-wrap;
+  }
+}

@@ -1,0 +1,8 @@
+/**
+ * Mixins
+ */
+
+@mixin content-wrap {
+  max-width: $max-width-content;
+  margin: 0 auto;
+}

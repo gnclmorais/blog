@@ -1,0 +1,27 @@
+/**
+ * Typography
+ */
+
+$family-serif: 'Cormorant Garamond', serif;
+$font-size: 21px;
+
+/** Default font settings */
+body {
+  font-family: $family-serif;
+  font-size: $font-size;
+}
+
+/** Links */
+a {
+  color: inherit;
+  text-decoration: none;
+
+  p & {
+    color: red;
+  }
+}
+
+/** Code-related blocks */
+tt, code, kbd, samp {
+  font-size: .85em;
+}
