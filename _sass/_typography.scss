@@ -5,18 +5,35 @@
 $family-sans-serif: sans-serif;
 $family-serif: 'Cormorant Garamond', serif;
 $font-size: 22px;
+$line-height: 1.5;
+$font-unit: $font-size * $line-height;
 
 /** Default font settings */
 body {
   font-family: $family-serif;
   font-size: $font-size;
-  line-height: 1.5em;
+  line-height: $line-height;
 }
 
 /** Titles */
 h1, h2, h3, h4, h5, h6 {
   font-family: $family-sans-serif;
   letter-spacing: -.5px;
+}
+h1 {
+  font-size: 2em;
+  margin-top: $font-unit;
+  margin-bottom: $font-unit;
+}
+h2 {
+  font-size: 1.5em;
+  margin-top: $font-unit;
+  margin-bottom: $font-unit * .5;
+}
+h3 {
+  font-size: 1.25em;
+  margin-top: $font-unit * .5;
+  margin-bottom: $font-unit * .25;
 }
 
 /** Links */
@@ -31,8 +48,12 @@ a {
 
 /** Code-related blocks */
 tt, code, kbd, samp {
-  font-size: .85em;
+  //font-size: .85em;
 }
-pre code {
-  font-size: 1em;
+code {
+  p &,
+  pre & {
+    font-size: 1em;
+    line-height: 1em;
+  }
 }

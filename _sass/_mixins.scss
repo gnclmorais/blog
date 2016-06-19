@@ -4,5 +4,6 @@
 
 @mixin content-wrap {
   max-width: $max-width-content;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
