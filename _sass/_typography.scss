@@ -3,7 +3,7 @@
  */
 
 $family-sans-serif: sans-serif;
-$family-serif: 'Cormorant Garamond', serif;
+$family-serif: 'Halant', serif;
 $font-size: 22px;
 $line-height: 1.5;
 $font-unit: $font-size * $line-height;
@@ -13,6 +13,7 @@ body {
   font-family: $family-serif;
   font-size: $font-size;
   line-height: $line-height;
+  -webkit-font-smoothing: antialiased;
 }
 
 /** Titles */
