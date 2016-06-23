@@ -47,6 +47,23 @@ a {
   }
 }
 
+/** Paragraphs */
+p {
+  text-align: justify;
+
+  &:first-letter {
+    font-size: 3.5em;
+    line-height: 1em;
+    float: left;
+    margin: 0 0.107em 0 0;
+  }
+
+  + p {
+    text-indent: 1em;
+    padding: $font-unit * .5 0;
+  }
+}
+
 /** Code-related blocks */
 tt, code, kbd, samp {
   //font-size: .85em;
