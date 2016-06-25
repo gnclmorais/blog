@@ -26,9 +26,11 @@ body {
 /** Content wrapping */
 h1, h2, h3, h4, h5, h6,
 p,
-ul,
 hr {
   @include content-wrap;
+}
+ul {
+  @include content-wrap(40px);
 }
 
 /** Code-related blocks */
@@ -37,6 +39,9 @@ hr {
 
   pre {
     @include content-wrap;
+
+    padding-top: $font-unit * .5;
+    padding-bottom: $font-unit * .5;
   }
 }
 
