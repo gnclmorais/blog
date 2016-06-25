@@ -59,7 +59,7 @@ a {
     position: relative;
 
     &::after {
-      @include transition(border $animation-time-default);
+      @include transition(border $animation-time-default/2);
 
       content: '';
       position: absolute;
@@ -74,7 +74,7 @@ a {
       color: $colour-light-primary;
 
       &::after {
-        border-top: 0 solid transparent;
+        border-top-color: transparent;
       }
     }
   }
