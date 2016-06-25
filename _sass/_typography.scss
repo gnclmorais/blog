@@ -133,3 +133,12 @@ ul {
   font-family: monospace;
   opacity: .5;
 }
+
+/**
+ * Main links (at the header)
+ */
+.trigger {
+  font-family: $family-sans-serif;
+  text-transform: lowercase;
+  font-weight: 300;
+}
