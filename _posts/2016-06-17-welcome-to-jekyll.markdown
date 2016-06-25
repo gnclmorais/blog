@@ -30,6 +30,14 @@ print_hi('Tom')
 
 #### h4 title
 
+I also have images in this article:
+
+![Adventure Time with Finn and Jake](http://www.pixelstalk.net/wp-content/uploads/2016/01/Adventure-Time-Background-HD.jpg)
+
+<figure>
+  <img src="http://www.pixelstalk.net/wp-content/uploads/2016/01/Adventure-Time-Background-HD.jpg" />
+</figure>
+
 ##### h5 title
 
 ###### h6 title

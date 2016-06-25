@@ -8,14 +8,17 @@ body {
 
 /** Page header */
 .site-header {
+  min-height: 20vmin;
 }
 
 /** Page content */
 .page-content {
+  min-height: 80vmin;
 }
 
 /** Page footer */
 .site-footer {
+  background: black; // Debug purposes
 }
 
 /** Content wrapping */
@@ -32,4 +35,9 @@ ul {
   pre {
     @include content-wrap;
   }
+}
+
+/** Images */
+img {
+  max-width: 100%;
 }

@@ -9,11 +9,19 @@ $line-height: 1.5;
 $font-unit: $font-size * $line-height;
 
 /** Default font settings */
-body {
+html {
   font-family: $family-serif;
   font-size: $font-size;
   line-height: $line-height;
   -webkit-font-smoothing: antialiased;
+
+  @media (max-width: 1200px) {
+    font-size: $font-size - 2;
+  }
+
+  @media (max-width: 800px) {
+    font-size: $font-size - 4;
+  }
 }
 
 /** Titles */
