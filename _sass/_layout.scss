@@ -9,6 +9,8 @@ body {
 /** Page header */
 .site-header {
   min-height: 20vmin;
+
+  text-align: center;
 }
 
 /** Page content */
@@ -24,7 +26,8 @@ body {
 /** Content wrapping */
 h1, h2, h3, h4, h5, h6,
 p,
-ul {
+ul,
+hr {
   @include content-wrap;
 }
 
@@ -37,7 +40,33 @@ ul {
   }
 }
 
+/** Paragraph text */
+p {
+  padding-top: $font-unit * .5;
+  padding-bottom: $font-unit * .5;
+}
+
 /** Images */
 img {
   max-width: 100%;
+}
+
+/** Horizontal break */
+hr {
+  border: none;
+  border-top: 1px solid red;
+  margin-top: $font-unit * .5;
+  margin-bottom: $font-unit * .5;
+}
+
+/** Lists */
+ul {
+  margin-top: $font-unit * .5;
+  margin-bottom: $font-unit * .5;
+}
+
+
+/** Quotations (long and short) */
+blockquote {
+  @include content-wrap(30px);
 }

@@ -2,9 +2,13 @@
  * Mixins
  */
 
-@mixin content-wrap {
-  max-width: $max-width-content;
+@mixin content-wrap(
+  $side-padding: $padding-unit-default,
+  $max-width: $max-width-content
+) {
+  max-width: $max-width - ($side-padding * 2);
   margin-left: auto;
   margin-right: auto;
-  padding: 0 $padding-unit-default;
+  padding-left: $side-padding;
+  padding-right: $side-padding;
 }

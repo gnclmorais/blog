@@ -5,7 +5,11 @@ date:   2016-06-17 07:18:53 +0100
 categories: jekyll update
 ---
 
+Short paragraph, just to see how it looks.
+
 This is __bold__ and this is _italic_. Sweet! You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+
+---
 
 This is a list, btw:
 
@@ -30,15 +34,21 @@ print_hi('Tom')
 
 #### h4 title
 
-I also have images in this article:
+I also have images in this article. Here’s a simple one:
 
 ![Adventure Time with Finn and Jake](http://www.pixelstalk.net/wp-content/uploads/2016/01/Adventure-Time-Background-HD.jpg)
+
+And now a fullscreen one! :D
 
 <figure>
   <img src="http://www.pixelstalk.net/wp-content/uploads/2016/01/Adventure-Time-Background-HD.jpg" />
 </figure>
 
 ##### h5 title
+
+> Finally, don’t forget to add a quote.
+
+> Black, white, green or blue, show off your natural hue, flamingo, oh oh owoah. If your multicouloured thats cool too. You, dont, need to change, its boring being the same, flamingo, oh oh oh. You’re pretty either way.
 
 ###### h6 title
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].

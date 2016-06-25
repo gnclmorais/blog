@@ -60,7 +60,7 @@ p {
   text-align: justify;
 
   /** The first paragraph of a post */
-  .post-content &:first-of-type {
+  .post-content > &:first-of-type {
     &:first-letter {
       font-size: 3em;
       line-height: 1em;
@@ -71,9 +71,8 @@ p {
 
   + p {
     $paragraph-indent: 1em;
-    
+
     text-indent: $paragraph-indent;
-    padding: $font-unit * .5 0;
 
     img {
       margin-left: -$paragraph-indent;
@@ -91,4 +90,41 @@ code {
     font-size: 1em;
     line-height: 1em;
   }
+}
+
+/** Quotations (long) */
+blockquote {
+  font-style: italic;
+  quotes: "\201C""\201D";
+  position: relative;
+
+  &::before,
+  &::after {
+    font-style: normal;
+    color: #ccc;
+    font-size: 4em;
+    position: absolute;
+  }
+
+  &::before {
+    content: open-quote;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: close-quote;
+    bottom: 0;
+    right: 0;
+    transform: scaleY(-1); // Flip it
+  }
+}
+
+/**
+ * Main title of the blog
+ */
+.site-title {
+  font-size: 4em;
+  font-family: monospace;
+  opacity: .5;
 }
