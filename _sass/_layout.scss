@@ -11,6 +11,18 @@ body {
   min-height: 20vmin;
 
   text-align: center;
+
+  &::before {
+    content: 'ç';
+    font-size: 10em;
+    font-family: monospace;
+    opacity: .1;
+    position: absolute;
+    z-index: -1;
+    top: -.9em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 /** Page content */
