@@ -5,10 +5,10 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "reset",
   "variables",
-  "typography",
   "mixins",
+  "reset",
+  "typography",
   "layout",
   "syntax-highlighting"
 ;

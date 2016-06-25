@@ -3,10 +3,19 @@
  */
 
 /** Colours */
+$colour-light-primary: #2CDA9D;
+$colour-light-secondary: #25614C;
+
+$colour-dark-primary: #1B1B1E;
+
+$colour-text-primary: #222;
 
 /** Dimensions */
 $max-width-content: 800px;
 $padding-unit-default: 15px;
+
+/** Timings */
+$animation-time-default: .2s;
 
 /** Jekyll */
 //$spacing-unit:     30px;

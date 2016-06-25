@@ -14,6 +14,7 @@ html {
   font-size: $font-size;
   line-height: $line-height;
   -webkit-font-smoothing: antialiased;
+  color: $colour-text-primary;
 
   @media (max-width: 1200px) {
     font-size: $font-size - 2;
@@ -47,11 +48,35 @@ h3 {
 
 /** Links */
 a {
+  @include transition(color $animation-time-default);
+
   color: inherit;
   text-decoration: none;
 
   p & {
-    color: red;
+    //border-bottom: 1px solid $colour-light-primary;
+    //color: $colour-main;
+    position: relative;
+
+    &::after {
+      @include transition(border $animation-time-default);
+
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 8px;
+      border-top: 2px solid $colour-light-primary;
+      z-index: -1;
+    }
+
+    &:hover {
+      color: $colour-light-primary;
+
+      &::after {
+        border-top-color: transparent;
+      }
+    }
   }
 }
 

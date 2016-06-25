@@ -25,3 +25,15 @@
   margin-top: $top_or_sum;
   margin-bottom: $bottom;
 }
+
+
+/**
+ * Animations
+ */
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
