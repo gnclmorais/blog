@@ -61,12 +61,12 @@ hr {
 
 /** Lists */
 ul {
-  margin-top: $font-unit * .5;
-  margin-bottom: $font-unit * .5;
+  @include set-vertical-rhythm;
 }
 
 
 /** Quotations (long and short) */
 blockquote {
   @include content-wrap(30px);
+  @include set-vertical-rhythm;
 }

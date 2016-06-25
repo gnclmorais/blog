@@ -12,3 +12,16 @@
   padding-left: $side-padding;
   padding-right: $side-padding;
 }
+
+@mixin set-vertical-rhythm($top_or_sum: 1, $bottom: null) {
+  @if ($bottom) {
+    $top_or_sum: $font-unit * $top_or_sum;
+    $bottom: $font-unit * $bottom;
+  } @else {
+    $top_or_sum: $font-unit * ($top_or_sum / 2);
+    $bottom: $top_or_sum;
+  }
+
+  margin-top: $top_or_sum;
+  margin-bottom: $bottom;
+}
