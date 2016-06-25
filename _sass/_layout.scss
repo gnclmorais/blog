@@ -59,9 +59,14 @@ img {
 /** Horizontal break */
 hr {
   border: none;
-  border-top: 1px solid red;
   margin-top: $font-unit * .5;
   margin-bottom: $font-unit * .5;
+  text-align: center;
+
+  &::before {
+    content: '~';
+    display: block;
+  }
 }
 
 /** Lists */
