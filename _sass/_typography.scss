@@ -70,8 +70,14 @@ p {
   }
 
   + p {
-    text-indent: 1em;
+    $paragraph-indent: 1em;
+    
+    text-indent: $paragraph-indent;
     padding: $font-unit * .5 0;
+
+    img {
+      margin-left: -$paragraph-indent;
+    }
   }
 }
 
