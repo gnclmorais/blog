@@ -1,5 +1,9 @@
 # blog
 
+## todo
+- Image/figure caption
+- Instagram/Spotify/RSS
+
 ## Resources & inspiration
 - http://v1.jontangerine.com/silo/typography/p/
 

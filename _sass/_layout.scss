@@ -99,8 +99,14 @@ blockquote {
   background: $colour-dark-primary;
   text-align: center;
   padding: $font-unit;
-  margin-top: $font-unit;
+  margin-top: $font-unit * 5;
   vertical-align: middle;
+
+  a {
+    &:hover {
+      color: $colour-light-primary;
+    }
+  }
 }
 
 
@@ -112,8 +118,11 @@ blockquote {
   vertical-align: middle;
 }
 
+
 /** Social network icons */
 .icon {
+  padding: 15px;
+
   svg {
     width: 30px;
   }
