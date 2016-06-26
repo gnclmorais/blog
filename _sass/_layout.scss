@@ -30,12 +30,6 @@ body {
   min-height: 80vmin;
 }
 
-/** Page footer */
-.site-footer {
-  color: $colour-text-light;
-  background: $colour-dark-primary;
-}
-
 /** Content wrapping */
 h1, h2, h3, h4, h5, h6,
 p,
@@ -84,6 +78,10 @@ hr {
 /** Lists */
 ul {
   @include set-vertical-rhythm;
+
+  p + & {
+    margin-top: -$font-unit;
+  }
 }
 
 
@@ -91,4 +89,24 @@ ul {
 blockquote {
   @include content-wrap(30px);
   @include set-vertical-rhythm;
+}
+
+
+
+/** Page footer */
+.site-footer {
+  color: $colour-text-light;
+  background: $colour-dark-primary;
+  text-align: center;
+  padding: $font-unit;
+  margin-top: $font-unit;
+}
+
+
+/** Round avatar */
+.avatar-rounded {
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
 }
