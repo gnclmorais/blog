@@ -87,16 +87,6 @@ a {
 p {
   text-align: justify;
 
-  /** The first paragraph of a post */
-  .post-content > &:first-of-type {
-    &:first-letter {
-      font-size: 3em;
-      line-height: 1em;
-      float: left;
-      margin: 0 0.1em 0 0;
-    }
-  }
-
   + p {
     $paragraph-indent: 1em;
 

@@ -1,42 +1,33 @@
 <footer class="site-footer">
-  <div class="wrapper">
-    {% if site.github_username %}
-      {% include icon-github.html username=site.github_username %}
-    {% endif %}
+  <div class="tagline">
+    Hi, I’m Gonçalo!
+    <br>
+    Follow me virtually anywhere:
+  </div>
 
-    <img class="avatar-rounded" src="https://dl.dropboxusercontent.com/u/11929206/from_gavina_l1004715_3_smaller256.png" alt="">
+  <div class="wrapper u-footer-spacing">
+    {% if site.github_username %}
+      {% include icons/github.html username=site.github_username %}
+    {% endif %}
 
     {% if site.twitter_username %}
-      {% include icon-twitter.html username=site.twitter_username %}
+      {% include icons/twitter.html username=site.twitter_username %}
     {% endif %}
 
-    <div class="footer-col-wrapper" style="display: none;">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
+    {% if site.dribbble_username %}
+      {% include icons/dribbble.html username=site.dribbble_username %}
+    {% endif %}
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
+    <img class="avatar-rounded" src="https://dl.dropboxusercontent.com/u/11929206/from_gavina_l1004715_3_smaller256.png" title="Gonçalo Morais" alt="">
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
+    {% if site.spotify_username %}
+      {% include icons/spotify.html username=site.spotify_username %}
+    {% endif %}
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
+    {% if site.instagram_username %}
+      {% include icons/instagram.html username=site.instagram_username %}
+    {% endif %}
+
+    {% include icons/rss.html %}
   </div>
 </footer>

@@ -11,8 +11,12 @@ email: gnclmorais@gmail.com
 description: A (rather technical) blog about (mostly) web development.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
+
 twitter_username: gnclmorais
 github_username:  gnclmorais
+dribbble_username: gnclmorais
+instagram_username: gnclmorais
+spotify_username: gnclmorais
 
 # Build settings
 markdown: kramdown

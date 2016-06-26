@@ -5,3 +5,11 @@
 .u-v-align-middle {
   vertical-align: middle;
 }
+
+.u-footer-spacing > * {
+  padding: 5px;
+
+  @media (min-width: 800px) {
+    padding: 15px;
+  }
+}
