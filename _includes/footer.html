@@ -1,6 +1,14 @@
 <footer class="site-footer">
   <div class="wrapper">
+    {% if site.github_username %}
+      {% include icon-github.html username=site.github_username %}
+    {% endif %}
+
     <img class="avatar-rounded" src="https://dl.dropboxusercontent.com/u/11929206/from_gavina_l1004715_3_smaller256.png" alt="">
+
+    {% if site.twitter_username %}
+      {% include icon-twitter.html username=site.twitter_username %}
+    {% endif %}
 
     <div class="footer-col-wrapper" style="display: none;">
       <div class="footer-col footer-col-1">

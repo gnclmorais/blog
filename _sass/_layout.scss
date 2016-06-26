@@ -100,13 +100,21 @@ blockquote {
   text-align: center;
   padding: $font-unit;
   margin-top: $font-unit;
+  vertical-align: middle;
 }
 
 
 /** Round avatar */
 .avatar-rounded {
-  width: 100px;
+  width: 75px;
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
+}
+
+/** Social network icons */
+.icon {
+  svg {
+    width: 30px;
+  }
 }
