@@ -8,7 +8,7 @@ body {
 
 /** Page header */
 .site-header {
-  min-height: 20vmin;
+  min-height: $font-unit * 4;
 
   text-align: center;
 
@@ -32,7 +32,8 @@ body {
 
 /** Page footer */
 .site-footer {
-  background: black; // Debug purposes
+  color: $colour-text-light;
+  background: $colour-dark-primary;
 }
 
 /** Content wrapping */
@@ -59,8 +60,7 @@ ul {
 
 /** Paragraph text */
 p {
-  padding-top: $font-unit * .5;
-  padding-bottom: $font-unit * .5;
+  @include set-vertical-rhythm;
 }
 
 /** Images */

@@ -4,9 +4,6 @@
 
 $family-sans-serif: sans-serif;
 $family-serif: 'Halant', serif;
-$font-size: 22px;
-$line-height: 1.5;
-$font-unit: $font-size * $line-height;
 
 /** Default font settings */
 html {
@@ -27,24 +24,27 @@ html {
 
 /** Titles */
 h1, h2, h3, h4, h5, h6 {
+  @include set-vertical-rhythm;
+
   font-family: $family-sans-serif;
   letter-spacing: -.5px;
 }
 h1 {
   font-size: 2em;
-  margin-top: $font-unit;
-  margin-bottom: $font-unit;
 }
 h2 {
+  line-height: 2em;
   font-size: 1.5em;
-  margin-top: $font-unit;
-  margin-bottom: $font-unit * .5;
 }
 h3 {
+  line-height: 1.2em;
   font-size: 1.25em;
-  margin-top: $font-unit * .5;
-  margin-bottom: $font-unit * .25;
 }
+h3 {
+  line-height: 1.2em;
+  font-size: 1.25em;
+}
+
 
 /** Links */
 a {
@@ -54,8 +54,6 @@ a {
   text-decoration: none;
 
   p & {
-    //border-bottom: 1px solid $colour-light-primary;
-    //color: $colour-main;
     position: relative;
 
     &::after {
@@ -65,7 +63,7 @@ a {
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 8px;
+      bottom: 7px;
       border-top: 2px solid $colour-light-primary;
       z-index: -1;
     }
@@ -90,7 +88,7 @@ p {
       font-size: 3em;
       line-height: 1em;
       float: left;
-      margin: 0 0.107em 0 0;
+      margin: 0 0.1em 0 0;
     }
   }
 

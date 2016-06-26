@@ -48,8 +48,6 @@ And now a fullscreen one! :D
 
 ##### h5 title
 
-> Finally, don’t forget to add a quote.
-
 > Black, white, green or blue, show off your natural hue, flamingo, oh oh owoah. If your multicouloured thats cool too. You, dont, need to change, its boring being the same, flamingo, oh oh oh. You’re pretty either way.
 
 ###### h6 title
