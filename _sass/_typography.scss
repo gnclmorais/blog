@@ -35,6 +35,11 @@ h1 {
 h2 {
   font-size: 1.5em;
   line-height: 2em;
+
+  .home & {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
 }
 h3 {
   font-size: 1.25em;
@@ -58,6 +63,10 @@ a {
   text-decoration: none;
   cursor: pointer;
 
+  &:hover {
+    color: $colour-light-primary;
+  }
+
   p & {
     position: relative;
 
@@ -74,8 +83,6 @@ a {
     }
 
     &:hover {
-      color: $colour-light-primary;
-
       &::after {
         border-top-color: transparent;
       }
@@ -150,4 +157,12 @@ ul {
   font-family: $family-sans-serif;
   text-transform: lowercase;
   font-weight: 300;
+}
+
+/**
+ * Home title
+ */
+.home-heading {
+  font-weight: 100;
+  text-align: center;
 }

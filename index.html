@@ -4,17 +4,30 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="home-heading">
+    gnclmorais/<b>blog</b>
+  </h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <hr>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  {% if site.posts == null %}
+    <p class="u-text-center">
+      No posts yet :(
+    </p>
+  {% else %}
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+              {{ post.title }}
+            </a>
+          </h2>
+          <p class="post-meta">
+            {{ post.date | date: "%A, %-d %B, %Y" }}
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 </div>
