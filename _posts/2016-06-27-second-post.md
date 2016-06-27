@@ -2,7 +2,8 @@
 layout: post
 title:  "Thus came the second… which ends up having a really long title"
 date:   2016-06-27 08:40:00 +0100
-categories: jekyll update
+category: test
+tags: [markdown, second]
 ---
 
 Second post, just because. [Links](http://google.com) are cool too!

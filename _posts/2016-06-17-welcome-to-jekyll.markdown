@@ -2,7 +2,9 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-06-17 07:18:53 +0100
-categories: jekyll update
+category: test
+tags: [markdown, first, layout]
+permalink: welcome
 ---
 
 Short paragraph, just to see how it looks.

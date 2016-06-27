@@ -2,7 +2,7 @@
 
 ## todo
 - Image/figure caption
-- Instagram/Spotify/RSS
+- Article tags
 - Links/anchors at the bottom, like references
 
 ## Resources & inspiration
