@@ -20,6 +20,7 @@ spotify_username: gnclmorais
 
 # Build settings
 markdown: kramdown
+permalink: /:title
 
 # Sass
 sass:
