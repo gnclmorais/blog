@@ -18,7 +18,13 @@ body {
   top: -.9em;
   left: 50%;
   transform: translateX(-50%);
-  color: #e9e9e9;
+
+  @at-root {
+    &,
+    a#{&}:visited {
+      color: #e9e9e9;
+    }
+  }
 
   &:hover {
     color: $colour-light-primary;
@@ -27,7 +33,7 @@ body {
 
 /** Page content */
 .page-content {
-  min-height: 80vmin;
+  min-height: 100vmax;
 }
 
 /** Content wrapping */
@@ -110,7 +116,6 @@ blockquote {
   text-align: center;
   padding: $font-unit 0;
   vertical-align: middle;
-  margin-top: $font-unit * 2;
 
   @media (min-width: 800px) {
     margin-top: $font-unit * 4;

@@ -12,6 +12,7 @@ description: A (rather technical) blog about (mostly) web development.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 
+# Social
 twitter_username: gnclmorais
 github_username:  gnclmorais
 dribbble_username: gnclmorais
@@ -22,6 +23,14 @@ spotify_username: gnclmorais
 markdown: kramdown
 permalink: /:title
 
+# Pagination
+paginate: 5
+paginate_path: "/blog/page/:num"
+
 # Sass
 sass:
   style: compressed
+
+# Gems
+gems:
+  - jekyll-paginate

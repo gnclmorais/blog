@@ -59,9 +59,12 @@ h6 {
 a {
   @include transition(color $animation-time-default);
 
-  color: inherit;
   text-decoration: none;
   cursor: pointer;
+
+  & {
+    color: inherit;
+  }
 
   &:hover {
     color: $colour-light-primary;
