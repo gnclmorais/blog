@@ -8,7 +8,11 @@ body {
 
 /** Page header */
 .site-header {
-  min-height: $font-unit * 4;
+  min-height: $font-unit * 2;
+
+  @media (min-width: 1200px) {
+    min-height: $font-unit * 3;
+  }
 }
 
 @-webkit-keyframes fade-in {
@@ -39,7 +43,8 @@ body {
 
 /** Page content */
 .page-content {
-  min-height: 100vmax;
+  min-height: 100vh;
+  overflow: auto; // Stop with the annoying margin collapse
 }
 
 /** Content wrapping */
@@ -81,6 +86,7 @@ p {
 
 /** Images */
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -117,14 +123,15 @@ blockquote {
 
 /** Page footer */
 .site-footer {
-  color: $colour-text-light;
-  background: $colour-dark-primary;
+  @include content-wrap;
+
+  color: $colour-dark-primary;
   text-align: center;
   padding: $font-unit 0;
   vertical-align: middle;
 
   @media (min-width: 800px) {
-    margin-top: $font-unit * 4;
+    //margin-top: $font-unit * 4;
   }
 
   a {

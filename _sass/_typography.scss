@@ -122,6 +122,8 @@ code {
 
 /** Quotations (long) */
 blockquote {
+  $position-delta: -20px;
+
   font-style: italic;
   quotes: "\201C""\201D";
   position: relative;
@@ -136,13 +138,13 @@ blockquote {
 
   &::before {
     content: open-quote;
-    top: 0;
+    top: $position-delta;
     left: 0;
   }
 
   &::after {
     content: close-quote;
-    bottom: 0;
+    bottom: $position-delta;
     right: 0;
     transform: scaleY(-1); // Flip it
   }
