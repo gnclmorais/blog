@@ -22,3 +22,4 @@
 
 ## Credits
 - SVG social icons by [Font Awesome](https://github.com/encharm/Font-Awesome-SVG-PNG/tree/master/black/svg)
+- https://www.smashingmagazine.com/2011/11/how-to-set-up-a-print-style-sheet/

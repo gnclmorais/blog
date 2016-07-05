@@ -1,0 +1,10 @@
+/**
+ * Printing tweaks
+ */
+
+@media print {
+  .site-header,
+  .site-footer .wrapper {
+    display: none;
+  }
+}
