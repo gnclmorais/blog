@@ -58,12 +58,14 @@ ul {
 }
 
 /** Code-related blocks */
-.highlight {
+.highlight,
+.highlighter-rouge {
   margin: 0;
 
   pre {
     @include content-wrap;
 
+    white-space: pre-wrap;
     padding-top: $font-unit * .5;
     padding-bottom: $font-unit * .5;
   }
