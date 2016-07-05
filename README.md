@@ -4,6 +4,7 @@
 - [Pagination](https://teamtreehouse.com/library/build-a-blog-with-jekyll-and-github-pages/building-and-customizing-the-blog/adding-pagination)
 - Article tags
 - Image/figure caption
+- Print stylesheet (different footer, with author name)
 - Drafts
 - Links/anchors at the bottom, like references
 - Check [Collections](https://jekyllrb.com/docs/collections/)

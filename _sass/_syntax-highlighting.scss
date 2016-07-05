@@ -2,12 +2,20 @@
  * Syntax highlighting styles
  */
 
-.highlight,
+$code-bg: whitesmoke;
+
 .highlighter-rouge {
-  background: whitesmoke; // TODO: Improve
+  background: $code-bg;
+
+  @at-root code#{&} {
+    padding: 0 5px;
+    border-radius: 3px;
+  }
 }
 
 .highlight {
+  background: $code-bg;
+
   .c     { color: #998; font-style: italic } // Comment
   .err   { color: #a61717; background-color: #e3d2d2 } // Error
   .k     { font-weight: bold } // Keyword
