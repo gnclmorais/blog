@@ -1,18 +1,18 @@
 # blog
 
 ## todo
-- [Pagination](https://teamtreehouse.com/library/build-a-blog-with-jekyll-and-github-pages/building-and-customizing-the-blog/adding-pagination)
-- Article tags
-- Image/figure caption
-- Print stylesheet (different footer, with author name)
-- Drafts
-- Links/anchors at the bottom, like references
-- Check [Collections](https://jekyllrb.com/docs/collections/)
-- How articles render on Twitter, Facebook and Pocket
-- Better `:visited` link state
-- Text select colour
-- Sub-titles as anchors
-- Common post footer, with things like "Come talk to me about this on Twitter"
+- 1st stage
+  - Drafts
+  - Text select colour
+  - Print stylesheet (different footer, author name)
+  - How articles render on Twitter, Facebook and Pocket
+- 2nd stage
+  - Sub-titles as anchors
+  - Links/anchors at the bottom, like references
+  - Article tags
+  - Check [Collections](https://jekyllrb.com/docs/collections/)
+  - Common post footer, with things like "Come talk to me about this on Twitter"
+  - [Pagination](https://teamtreehouse.com/library/build-a-blog-with-jekyll-and-github-pages/building-and-customizing-the-blog/adding-pagination)
 
 ## Resources & inspiration
 - http://v1.jontangerine.com/silo/typography/p/
