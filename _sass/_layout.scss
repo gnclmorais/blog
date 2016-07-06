@@ -99,7 +99,9 @@ figure {
 
 /** Figure caption */
 figcaption {
-  @include content-wrap($max-width: 1000px);
+  $figure-width: 1000px;
+
+  @include content-wrap($max-width: $figure-width);
 
   text-align: justify;
   background: $colour-main-bg;
@@ -120,6 +122,15 @@ figcaption {
     border-right: $triangle-width solid white;
     border-bottom: $triangle-width solid transparent;
     border-left: $triangle-width solid transparent;
+
+    @media (max-width: #{1000px + $triangle-width * 4}) {
+      top: -$triangle-width * 2;
+      left: $triangle-width * 2;
+      border-top: $triangle-width solid transparent;
+      border-left: $triangle-width solid transparent;
+      border-right: $triangle-width solid transparent;
+      border-bottom: $triangle-width solid white;
+    }
   }
 }
 
