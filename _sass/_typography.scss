@@ -3,11 +3,13 @@
  */
 
 $family-sans-serif: sans-serif;
-$family-serif: 'Halant', serif;
+$family-serif: 'Rasa', serif;
+$family-weight: 300;
 
 /** Default font settings */
 html {
   font-family: $family-serif;
+  font-weight: $family-weight;
   font-size: $font-size;
   line-height: $line-height;
   -webkit-font-smoothing: antialiased;
