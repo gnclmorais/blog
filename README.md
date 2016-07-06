@@ -10,10 +10,14 @@
 - Check [Collections](https://jekyllrb.com/docs/collections/)
 - How articles render on Twitter, Facebook and Pocket
 - Better `:visited` link state
+- Text select colour
+- Sub-titles as anchors
+- Common post footer, with things like "Come talk to me about this on Twitter"
 
 ## Resources & inspiration
 - http://v1.jontangerine.com/silo/typography/p/
 - http://blog.ricardofilipe.com/post/getting-started-arduino-johhny-five
+- http://rainsoft.io/javascript-rises/
 
 ## Ideas
 - Clean, simple footer like GitHub
