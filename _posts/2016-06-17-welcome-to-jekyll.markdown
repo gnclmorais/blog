@@ -45,6 +45,9 @@ And now a fullscreen one! :D
 
 <figure>
   <img src="http://www.pixelstalk.net/wp-content/uploads/2016/01/Adventure-Time-Background-HD.jpg" />
+  <figcaption>
+    <a href="https://en.wikipedia.org/wiki/Adventure_time">Adventure Time</a> is the best show ever! Finn said: <i>I'm Princess Bubblegum and I'm a dork because I like science. I've also got a really annoying voice that Finn thinks is attractive!</i>
+  </figcaption>
 </figure>
 
 ##### h5 title

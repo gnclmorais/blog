@@ -82,7 +82,7 @@ a {
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 7px;
+      bottom: 4px;
       border-top: 2px solid $colour-light-primary;
       z-index: -1;
     }
@@ -107,6 +107,18 @@ p {
     img {
       margin-left: -$paragraph-indent;
     }
+  }
+}
+
+/** Figure caption **/
+figcaption {
+  font-family: $family-sans-serif;
+  font-size: .75em;
+
+  // Invert italics
+  font-style: italic;
+  i {
+    font-style: normal;
   }
 }
 

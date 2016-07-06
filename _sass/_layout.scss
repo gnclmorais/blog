@@ -92,6 +92,37 @@ img {
   max-width: 100%;
 }
 
+/** Figure (used here as a fullscreen img) */
+figure {
+  position: relative;
+}
+
+/** Figure caption */
+figcaption {
+  @include content-wrap($max-width: 1000px);
+
+  text-align: justify;
+  background: $colour-main-bg;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: .5em 1em;
+
+  &::before {
+    $triangle-width: 10px;
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -$triangle-width * 2;
+    border-top: $triangle-width solid white;
+    border-right: $triangle-width solid white;
+    border-bottom: $triangle-width solid transparent;
+    border-left: $triangle-width solid transparent;
+  }
+}
+
 /** Horizontal break */
 hr {
   border: none;
