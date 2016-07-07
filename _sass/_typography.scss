@@ -195,3 +195,11 @@ ul {
   text-align: center;
   margin-bottom: 2em;
 }
+
+/**
+ * Mark
+ */
+mark {
+  color: $colour-text-light;
+  background: $colour-light-primary;
+}
