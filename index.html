@@ -8,7 +8,7 @@ layout: default
     gnclmorais/<b>blog</b>
   </h1>
 
-  {% if site.posts == null %}
+  {% if site.posts == nil or site.posts.size == 0 %}
     <p class="u-text-center">
       No posts yet :(
     </p>
