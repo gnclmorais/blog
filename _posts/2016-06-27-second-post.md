@@ -7,7 +7,7 @@ tags: [markdown, second]
 permalink: this-is-the-second-post
 ---
 
-Second post, just because. [Links](http://google.com) are cool too!
+Second post, just because. [Links](http://google.com) are cool too! Let’s see if a <mark>mark would work</mark>…
 
 This is __bold__ and this is _italic_. Sweet! You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many [different ways](http://dribbble.com), but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -1,9 +1,7 @@
 {% if include.tags.size > 0 %}
-<div class="post-tags">
-  <ul>
-    {% for tag in include.tags %}
-    <li>{{ tag }}</li>
-    {% endfor %}
-  </ul>
-</div>
+<ul class="post-tags">
+  {% for tag in include.tags %}<li class="post-tags__item">
+    <a href="#" class="post-tags__content">{{ tag }}</a>
+  </li>{% endfor %}
+</ul>
 {% endif %}

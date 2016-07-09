@@ -20,7 +20,7 @@
 
 
 /**
- * Animations
+ * Animations & such
  */
 
 @mixin transition($transition...) {
@@ -28,4 +28,11 @@
      -moz-transition: $transition;
        -o-transition: $transition;
           transition: $transition;
+}
+
+@mixin transform($transform...) {
+ -webkit-transform: $transform;
+    -moz-transform: $transform;
+      -o-transform: $transform;
+         transform: $transform;
 }

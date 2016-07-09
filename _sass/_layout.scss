@@ -228,3 +228,46 @@ blockquote {
 .post-list {
   list-style: none;
 }
+
+/**
+ * Post tags lists
+ */
+.post-tags {
+  list-style: none;
+  text-align: center;
+}
+
+.post-tags__item {
+  display: inline-block;
+
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.post-tags__content {
+  line-height: 1em;
+  padding: 5px 10px 3px;
+  position: relative;
+
+  &:hover {
+    color: $colour-text-light;
+  }
+
+  &::before {
+    @include transform(skew(-10deg));
+    @include transition(all $animation-time-default);
+
+    content: '';
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: whitesmoke;
+  }
+  &:hover::before {
+    background: $colour-light-primary;
+  }
+}

@@ -6,6 +6,7 @@
   - Text select colour
   - Print stylesheet (different footer, author name)
   - How articles render on Twitter, Facebook and Pocket
+  - Improved link looks
 - 2nd stage
   - Sub-titles as anchors
   - Links/anchors at the bottom, like references
