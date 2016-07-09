@@ -1,0 +1,112 @@
+---
+title: '100:10:1'
+date: 2016-02-11 00:00:00 
+tags: 100101
+layout: post
+---
+Following the example of a [few](https://writing.natwelch.com/post/535) [good](http://redlua.com/post/100-10-1/) [friends](http://kamalmarhubi.com/blog/2016/01/25/100-10-1/), I decided to joined them on a [100:10:1](http://blog.fogus.me/2015/11/04/the-100101-method-my-approach-to-open-source/) project. Simply put: write down 100 ideas (anything you would like to do, anything wild), them pick 10 of them up to build MVPs (you can/should work on them concurrently), and choose one of those ideas into a legitimate release.
+
+I felt this initiative played really well with another quest I took in January: planning the whole year by weeks and [open sourcing my goals](https://github.com/gnclmorais/personal-goals) (inspired by [Una’s project](https://github.com/una/personal-goals)). I pretty sure this will help me to nail down a few finished projects. So, without further ado, here are the 100 (unreviewed) ideas I was able to gather:
+
+1. [Kaomoji bot](https://github.com/gnclmorais/zulip-bot-kaomoji) for Slack
+1. Philosophy Garden
+1. A easily deployable web map with every place I’ve ever been
+1. Colour palette by city (thanks Ricardo!)
+1. Beautifully printable tweets
+1. Mobile app to delete old/inprotected wifi networks
+1. Moodboard from a Tumblr link
+1. Stoicism wisdom
+1. Decluttering as a Service
+1. Pokédex (Twitter and/or Slack bot)
+1. Todo list of Google Maps favourites
+1. Tweetdeck/Trello look-alike but for Google Tasks
+1. Markdown Viewer Chrome extension
+1. Twitter bot for https://api.github.com/zen
+1. Who-to-unfollow suggestion generator
+1. Bot for keeping daily track of IMDb’s top 250 movies
+1. Beautiful places where you can go by train
+1. Instagram/gif mosaic
+1. Platform to manage friend’s and your debts
+1. Instagram top list
+1. Email you your favourite quotes
+1. Route planner for visits to big cities
+1. Cursing heat world map
+1. Flag identifier, by colours/keywords
+1. Project to help coping with existential angst
+1. Display the tube’s uptime, like a server
+1. Circle viz reactive to sound/music
+1. Drag-n-drop image to base64 and vice-versa
+1. Choose a route based on time and air pollution
+1. Something with http://goodsci.fi
+1. Spotify-based screen saver of OS X
+1. Add vcards to [Alumnum](https://github.com/gnclmorais/alumnum)
+1. Developer Downtime project
+1. “Jogo do 24”, collaborative or bot-based
+1. Chrome extension for quotes
+1. Bookshelf in Node.js, using Goodreads and Kindle profiles
+1. Node.js text editor, easily deployable
+1. Adventure Time project (something artsy)
+1. Drag-n-drop music player & visualiser
+1. GitHub resumé: show graphs of languages and proficiency
+1. Stats project comparing London to New York
+1. Web-based Magic: The Gathering life counter
+1. Map app where people can endorse places
+1. Multiple bio updater
+1. Watch Later service aggregator
+1. Spotify consume analiser
+1. A project to promote imagination, like [Nat’s mood board](http://mood.natwelch.com)
+1. Typography-based project, like [12 Kinds of Kindness](http://12kindsofkindness.com)
+1. Clone of amb-1.com
+1. Do something with NASA (photos, info, APIs…)
+1. Glich image generator
+1. Draggable JS script
+1. Multiplayer pong
+1. Photography handbook or how to get into photography
+1. Global checkin mapper
+1. Scrooljacking library
+1. <book X> in a gist, collection of the important quotes
+1. Chiptune web player
+1. Composable, modular, interactive binary unit
+1. Sport dashboard, using Fitbit and Nike+ APIs
+1. Haruki Murakami novel generator
+1. Pocket readings analyser
+1. Recurse Center CSS-only logo
+1. Haskell library that mimics dynamic typing
+1. Web-based rhythm/sample box, recordable and keyboard based
+1. Pokémon-based game for Slack
+1. Basic inheritance library for JS
+1. Streets of London, a possibly automated Intagram bot
+1. Companion AI capable of basic speech
+1. Website crawler & watcher (for RSSless places)
+1. Recursers around the world (like [Humans of New York](http://www.humansofnewyork.com/))
+1. Scott Pilgrim Slack bot
+1. Design what a Planet Earth could look like
+1. Scroll-along of several coffee brewing methods
+1. Audio/video player of playlists from everywhere
+1. Horizontally split website that rotates as you scroll
+1. Small Arduino display to tell weather and suggest clothes
+1. Drag a photo and click somewhere to grow a circle around that point
+1. Chocolate photos mosaic
+1. Make great posters out of the Tao of Python
+1. Circular range selector
+1. Dead-simple web timer (maybe even looking like a kitchen timer)
+1. Simple guide on the common techniques to style base components
+1. Kaleidoscope using you laptop camera as input
+1. Haskell online REPL
+1. City walk optimiser (give a few points and routes will be traced)
+1. Do something with Portugal data, like a dashboard or so
+1. A dead-simple guide to colour picking
+1. Create an identity for a band (because bands merch are usually crap)
+1. `/etc/hosts` manager (to allow/block stuff)
+1. Repository of travel tips, 2-liners max
+1. Contribute to npm and/or npm docs so I can get free socks
+1. Idea pool (thanks Michelle!)
+1. Photograpy project, _Seen From Afar_
+1. Online text-to-Morse-code editor (with audio)
+1. [‘Meditations’](https://www.goodreads.com/book/show/30659.Meditations) Twitter bot
+1. Front-end Haiku generator
+1. Game of Life on the browser
+1. Post-rock band name generator
+1. Scroll library that allows the user to scroll up-down-up and keeps scrolling on the original direction
+
+__P.S.:__ It’s _way_ harder to find 100 projects to work on that I thought it would be. This took me several days and some deep thinking!

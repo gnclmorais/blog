@@ -1,0 +1,20 @@
+---
+title: '100:10:1, part II'
+date: 2016-02-19 00:00:00 
+tags: 100101
+layout: post
+---
+After finishing the hard task of finding [100 projects I would like to work on](http://gnclmorais.com/blog/100101/), now comes the (hopefully) easier task of picking the main __10__ ideas to focus on and build [MVPs](https://en.wikipedia.org/wiki/Minimum_viable_product).
+
+A few projects evolved during this week, which helped me to polish a few lose points and understand where should I focus my time & energy. Things I had implemented in the past (but with a different tech stack) were automatically discarded. Also, easier items for which I don’t have a good use at the moment were also not considered, which ended up halving my list. So here are the 10 ideas I’ll work on during the next six months:
+
+1. A project to spark imagination & brainstorming, like [Nat’s mood board](http://mood.natwelch.com)
+1. A bookshelf in Node.js, using Goodreads and Kindle profiles
+1. Scroll-along manuals of several coffee brewing methods on [theperfectcupof.coffee](http://theperfectcupof.coffee)
+1. Beautifully printable tweets
+1. Decluttering as a Service
+1. Essays and explanations on [philosophy.garden](http://philosophy.garden)
+1. Showcase of the best sci-fi on [goodsci.fi](http://goodsci.fi)
+1. Recursers Around The World (like [Humans of New York](http://www.humansofnewyork.com/))
+1. Kaleidoscope using you laptop camera as input
+1. Developer Downtime project on [awayfrom.tech](http://awayfrom.tech)

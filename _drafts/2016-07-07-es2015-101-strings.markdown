@@ -1,0 +1,35 @@
+---
+title: 'ES2015 101: Strings'
+date: 2016-07-07 00:00:00 
+tags: javascript es2015 strings
+layout: post
+---
+Also know as ECMAScript 2015, ECMAScript 6, or simply ES6, is the latest version of the ECMAScript standard. Simply put, it brings interesting changes to the current flavour of JavaScript we write.
+
+One of the easiest features to wrap our heads around is __strings__. ES2015 brings a few very needed improvements that will make our lives way easier in the near future.
+
+## 1. String interpolation
+This is probably the one that excites me the most, as I’m not a fan of concatenating strings. With this new standard, it will be possible to just do:
+```
+let answer = 42;
+console.log(`${answer} is the answer to the Ultimate Question.`);
+```
+Say goodbye to `'glueing up strings to place ' + values + ' between then.'`
+
+## 2. Multi-line strings
+Another common headache is gone, as you’ll be able to do:
+```
+let show = `
+Adventure Time,
+C'mon grab your friends,
+We're going to very
+distant lands.
+`;
+```
+
+## 3. brah
+
+## Resources
+* http://www.2ality.com/2015/01/es6-strings.html
+* https://www.christianheilmann.com/2015/08/28/es6-for-now-template-strings/
+* https://developers.google.com/web/updates/2015/01/ES6-Template-Strings?hl=en

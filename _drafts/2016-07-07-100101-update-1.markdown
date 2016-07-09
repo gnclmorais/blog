@@ -1,0 +1,17 @@
+---
+title: '100:10:1, update 1'
+date: 2016-07-07 00:00:00 
+tags: 100101 tenbysix
+layout: post
+---
+Now that I’m back to my Londoner routine, I feel ready to change gears on this project and start doing some modest, but [constant progress](http://carlosd.ghost.io/one-year/).
+
+So, starting from now, I will start doing weekly updates to my current projects. I’ll only abstain from them if a week was exceptionally slow/busy and I didn’t get to touch on code at all.
+
+## Stuff I worked on:
+#### project 1…
+qwerty
+
+## Stuff I didn’t worked on:
+#### project 1…
+qwerty
