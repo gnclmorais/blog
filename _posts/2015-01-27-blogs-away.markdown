@@ -1,7 +1,7 @@
 ---
 title: 'Blogs away!'
-date: 2015-01-27 00:00:00 
-tags: 
+date: 2015-01-27 00:00:00
+tags:
 layout: post
 ---
 Hi there!
@@ -21,3 +21,8 @@ Outside this blog, you can find me virtually everywhere. The main places are [Tw
 
 P.S.: This post’s title is an [_homage_](http://christianheilmann.com/2005/01/27/blogs-away/) to [Christian Heilmann](https://twitter.com/codepo8), in an attempt to avoid the ever so classic [“Hello world!”](https://en.wikipedia.org/wiki/%22Hello,_world!%22_program).
 
+---
+
+## Update
+I recently moved my blog from Ghost + DigitalOcean to Jekyll + GitHub Pages. Why, you ask? Simply because I’m a cheapskate and I like free stuff.  
+Now for real, I really like Ghost, but for the uses I’m giving to my blog, a (free) static platform is more than enough.
