@@ -9,6 +9,7 @@
   - [x] Improved link looks
   - [x] CSS minification
 - 2nd stage
+  - [x] Async CSS loading
   - Sub-titles as anchors
   - Links/anchors at the bottom, like references
   - Article tags
@@ -35,3 +36,6 @@
 
 ## Helpful articles about Jekyll and GitHub pages
 - [Configuring Jekyll for User and Project GitHub Pages](http://downtothewire.io/2015/08/15/configuring-jekyll-for-user-and-project-github-pages/) by [@JoeFriedrichsen](https://twitter.com/JoeFriedrichsen)
+
+## Credits
+- [Basehold.it](http://basehold.it/) from [Dan Eden](https://twitter.com/_dte) and [Michael Wright](https://twitter.com/michaelw90)
