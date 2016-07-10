@@ -1,6 +1,6 @@
 ---
 title: 'Deploy your Python bot to Heroku'
-date: 2015-02-28 00:00:00 
+date: 2015-02-28 00:00:00
 tags: python heroku deploy
 layout: post
 ---
@@ -8,7 +8,7 @@ So you got your Python bot running flawlessly on your computer — awesome. Now 
 
 A bit of context for this post, beforehand. At [Hacker School](https://www.hackerschool.com) we use Zulip as our real time communication tool. In the past, a few students wrote some useful bots to provide us with important services, like the [weather](https://github.com/stephsamson/weather-bot) or [gifs](https://github.com/dariajung/zulip-gif-bot) on demand.
 
-However, I felt that one of the most important things I use in my written communication was missing: [kaomojis](http://en.wikipedia.org/wiki/Emoticon#Japanese_style)! ＼(＾▽＾)／ 
+However, I felt that one of the most important things I use in my written communication was missing: [kaomojis](http://en.wikipedia.org/wiki/Emoticon#Japanese_style)! ＼(＾▽＾)／
 So instead of wandering around without any specific task, I decided to make a [silly bot](https://github.com/gnclmorais/zulip-bot-kaomoji) that would fill up this gap.
 
 After its development & local testing, it was time to finally deploy it and put it somewhere more reliable than my computer. [Heroku](https://heroku.com) seemed like a good place, with their free plan and simplicity of use & deploy. However, deploying a simple Python bot to it was not as simple and I thought it would be, so I felt the need to write a simple guide to easily deploy simple scripts like mine.
@@ -50,6 +50,7 @@ heroku	https://git.heroku.com/zulip-bot-kaomoji.git (push)
 ```
 
 You can also rename your application:
+
 ```
 $ heroku apps:rename zulip-bot-kaomoji
 Renaming radiant-reaches-3973 to zulip-bot-kaomoji... done
@@ -102,7 +103,9 @@ To https://git.heroku.com/zulip-bot-kaomoji.git
 ```
 
 #### Setup environment variables
+
 If your bot relies on variables found through Python’s `os.environ`, you must set them as well in order for your script to work. Just use Heroku’s `config:set` (I have a script called `config_heroku.sh` that basically does `heroku config:set [KEY_NANE=value …]`):
+
 ```
 $ ./config_heroku.sh
 Setting config vars and restarting zulip-bot-kaomoji... done, v6
@@ -113,10 +116,13 @@ ZULIP_ADR:         awesome-bot@awesome.place.com
 ```
 
 #### Make sure there’s an instance available
+
 Go to your [Heroku’s dashboard](https://dashboard.heroku.com/), then click on your app to see its details. Make sure you have a **1** next to that purple bar (the purple bar might not be visible if you have 0 instances — just drag it to the right).
 
 #### Check the log
+
 `heroku log` will show you something like this:
+
 ```
 $ heroku logs
 …
@@ -137,8 +143,9 @@ $ heroku logs
 Note the top errors when Heroku tried to start the bot (but didn’t have the required environment variables) and the last five lines, where we set those variables and restart the instance.
 
 #### Conclusion
-So this should be enough to deploy, config & run a simple Python script. I’ll keep this guide as up to date as possible, since I’ll be using Heroku a lot more in the next months and I’m just learning how to use it. If you want to discuss something about this, ping me [on Twitter](https://twitter.com/gnclmorais). (￣▽￣)ノ
+So this should be enough to deploy, config & run a simple Python script. I’ll keep this guide as up to date as possible, since I’ll be using Heroku a lot more in the next months and I’m just learning how to use it. If you want to discuss something about this, ping me [on Twitter](https://twitter.com/gnclmorais).  
+(￣▽￣)ノ
 
 #### Resources
-https://devcenter.heroku.com/articles/git
-http://amertune.blogspot.com/2014/04/tutorial-create-reddit-bot-with-python.html
+- https://devcenter.heroku.com/articles/git
+- http://amertune.blogspot.com/2014/04/tutorial-create-reddit-bot-with-python.html

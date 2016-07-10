@@ -1,9 +1,15 @@
 ---
 title: 'How this theme was built'
-date: 2015-02-16 00:00:00 
+date: 2015-02-16 00:00:00
 tags: tools process blog
 layout: post
 ---
+
+## Update
+This post no longer refers to the current theme you are seeing right now, as I moved my blog from Ghost to Jekyll. You can still check the Ghost theme I created, [Noir](github.com/gnclmorais/Noir), and read about it. Enjoy!
+
+---
+
 The issue that delayed me the most to create a blog was the notion, or rather the goal, of releasing _my_ blog to the world looking like _I_ wanted, not just “good enough” after finally selecting a theme somebody else implemented from a list of dozens of them.
 
 So it took me a while and a couple of restarts to finally have this page online, as I kept rethinking, redesigning and giving up on my own theme.
@@ -16,7 +22,7 @@ Technically speaking, it is quite simple, as you can [see](https://github.com/gn
 Ghost uses Handlebars as its templating engine. This gives it certain advantages, such as reusable partials (small page chunks) and some improved readability on our templates. Each time of page has its own template (`index.hbs` for homepage, `post.hbs` for a single post page, etc.) and there is even the possibility to override certain Ghost behaviours, such as pagination (creating and editing `partials/pagination.hbs`).
 
 #### Fonts
-I must admit I’m fairly uneducated regarding fonts and everything font-related. I frequently request the help of close friends with a design background, to make sure I don’t miss some unforgivable details for font aficionados. 
+I must admit I’m fairly uneducated regarding fonts and everything font-related. I frequently request the help of close friends with a design background, to make sure I don’t miss some unforgivable details for font aficionados.
 
 That said, I tried to use just a few fonts, but still maintaining the base design I wanted it to have. Four different fonts are being used in this theme:
 
@@ -54,4 +60,3 @@ One of the few details I found missing on Ghost is code highlight. I can’t say
 [Lea Verou](TODO)’s amazing [Prism.js](TODO) is almost a dream come true, with several themes, programming languages supported, and the ability to add plugins to increase its features. The only thing I found it missing was line wrapping, which I’ll further investigate properly.
 
 [Dan Eden](https://twitter.com/_dte)’s [Basehold](https://github.com/daneden/Basehold.it) tool was incredibly precious to work out the [vertical rhythm](http://24ways.org/2006/compose-to-a-vertical-rhythm) I was looking for. I can honestly save is the best/easiest piece of software I found to work this out. Just put `<link rel="stylesheet" href="http://basehold.it/24">` on your page and you can easily see if everything falls into position.
-
