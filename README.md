@@ -2,11 +2,12 @@
 
 ## todo
 - 1st stage
-  - Drafts
-  - Text select colour
-  - Print stylesheet (different footer, author name)
-  - How articles render on Twitter, Facebook and Pocket
-  - Improved link looks
+  - [x] [Drafts](https://jekyllrb.com/docs/drafts/)
+  - [x] Text select colour
+  - [x] Print stylesheet (different footer, author name)
+  - [x] How articles render on Twitter, Facebook and Pocket
+  - [x] Improved link looks
+  - [x] CSS minification
 - 2nd stage
   - Sub-titles as anchors
   - Links/anchors at the bottom, like references
@@ -14,6 +15,9 @@
   - Check [Collections](https://jekyllrb.com/docs/collections/)
   - Common post footer, with things like "Come talk to me about this on Twitter"
   - [Pagination](https://teamtreehouse.com/library/build-a-blog-with-jekyll-and-github-pages/building-and-customizing-the-blog/adding-pagination)
+- 3rd stage
+  - Improve print stylesheet
+  - Implement [Twitter’s card](https://dev.twitter.com/cards/overview)
 
 ## Resources & inspiration
 - http://v1.jontangerine.com/silo/typography/p/
