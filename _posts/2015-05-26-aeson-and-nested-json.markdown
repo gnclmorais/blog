@@ -1,6 +1,6 @@
 ---
 title: 'Aeson and nested JSON'
-date: 2015-05-26 00:00:00 
+date: 2015-05-26 00:00:00
 tags: haskell aeson
 layout: post
 ---
@@ -48,7 +48,9 @@ I’ll skip the details about types & such and go straight to a simple example.
   "stat": "ok"
 }
 ```
+
 The JSON above will map to the following Haskell types and decoding methods:
+
 ```haskell
 data Photo = Photo
     { photoid   :: Text

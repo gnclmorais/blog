@@ -20,7 +20,7 @@ I can point out one thing I did right as soon as I got here and another I did wr
 + Started learning Haskell and [solved](http://github.com/gnclmorais/euler-by-haskell) [Project Euler](http://projecteuler.net) problems with it.
 + Paired a bit with several people, although I still have a long way to go and a lot of people to pair with.
 + Improved the [Zulip weather bot](https://github.com/gnclmorais/weather-bot) we use internally.
-+ Created a [Zulip bot](https://github.com/gnclmorais/zulip-bot-kaomoji) so I could kaomojis on our chat system. ¯\_(ツ)_/¯
++ Created a [Zulip bot](https://github.com/gnclmorais/zulip-bot-kaomoji) so I could kaomojis on our chat system. ¯\\\_(ツ)_/¯
 + Went to a lot of workshops & talks that people organise in the space, from design patterns to Go hands-on, passing through [qigong](https://en.wikipedia.org/wiki/Qigong) mornings.
 + Started organising weekly movie nights ([Hackers](http://www.imdb.com/title/tt0113243) and [Ponyo](http://www.imdb.com/title/tt0876563), until now).
 + Hacked together with Michelle a kind of [contacts importing app](https://github.com/gnclmorais/alumnum) for Recursers.
@@ -29,4 +29,4 @@ I can point out one thing I did right as soon as I got here and another I did wr
 
 And I think that’s most of it. This is one of the reasons I should have kept a proper journal… These past weeks were filled with numerous things, but only the ones I kept some kind of record of stuck to me, I’m probably missing a lot of good stuff here.
 
-Finally, I’ll just leave a promise of definitely posting another post redarging Recurse Center as soon as it ends, and [a link](http://around-nyc-in-86-days.tumblr.com) to the only place where I’m daily documenting my life here, mostly centered around photos I take and the non-technical stuff I do around here (usually with other Recursers). See you in 6 months for a heart-breaking farwell!
+Finally, I’ll just leave a promise of definitely posting another post redarging Recurse Center as soon as it ends, and a [link](http://around-nyc-in-86-days.tumblr.com) to the only place where I’m daily documenting my life here, mostly centered around photos I take and the non-technical stuff I do around here (usually with other Recursers). See you in 6 months for a heart-breaking farwell!

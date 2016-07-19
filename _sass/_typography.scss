@@ -81,7 +81,7 @@ a {
     color: $colour-light-primary;
   }
 
-  p & {
+  .post-content & {
     position: relative;
 
     &::after {
@@ -92,7 +92,7 @@ a {
       left: 0;
       right: 0;
       bottom: 4px;
-      border-top: 2px solid $colour-light-primary;
+      border-top: 1px solid $colour-light-primary;
       z-index: -1;
     }
 
@@ -106,7 +106,9 @@ a {
 
 /** Paragraphs */
 p {
-  text-align: justify;
+  .post-content & {
+    text-align: justify;
+  }
 
   + p {
     $paragraph-indent: 1em;
@@ -114,7 +116,7 @@ p {
     text-indent: $paragraph-indent;
 
     img {
-      margin-left: -$paragraph-indent;
+      margin: 0 auto;
     }
   }
 }

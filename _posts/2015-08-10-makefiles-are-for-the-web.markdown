@@ -1,6 +1,6 @@
 ---
 title: 'Makefiles are for the web'
-date: 2015-08-10 00:00:00 
+date: 2015-08-10 00:00:00
 tags: makefiles web make
 layout: post
 ---
@@ -12,6 +12,7 @@ They started to look a good alternative to stop going though my terminal command
 Concerning web development (mostly front-end), if you’re already using [Grunt](http://gruntjs.com), [Gulp](http://gulpjs.com), [Broccoli](http://broccolijs.com) or [npm scripts](https://docs.npmjs.com/misc/scripts), you might not need this. But I’ve already found myself in situations where my projects had little or none dependencies, like [SCSScandinavian Flags](https://github.com/gnclmorais/scsscandinavian-flags). This project is (S)CSS-only, so the only real dependency is [Sass](http://sass-lang.com). If you already played around with Sass, you know how [long the commands can get](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#using_sass); but, more than long, this is something I 1) don’t want to keep in mind all the time and 2) don’t want to browser around my terminal command history looking for the right commands every time I want to compile or watch my SCSS files.
 
 The best way I’ve found to fix this was to write a [`Makefile`](https://github.com/gnclmorais/scsscandinavian-flags/blob/master/Makefile) for this project:
+
 ```
 build:
 	sass scss/main.scss:dist/flags.css --style compressed
@@ -49,5 +50,3 @@ This one is just a personal shortcut, to automatically open the browser on a tes
 Cleans compiled CSS files (which can always be created by compiling the Sass files) and [Sass’ cache](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#cache_stores).
 
 So next time you’re tempted to grab Grunt, Gulp, or any other modern day task runner, remember Unix’s tools and its old, time-tested wisdom.
-
-

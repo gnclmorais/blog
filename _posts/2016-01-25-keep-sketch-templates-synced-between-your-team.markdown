@@ -1,6 +1,6 @@
 ---
 title: 'Keep Sketch templates in sync between your team'
-date: 2016-01-25 00:00:00 
+date: 2016-01-25 00:00:00
 tags: sketch ln
 layout: post
 ---
@@ -19,9 +19,11 @@ Pick where you want that folder to be and create it (as long as it’s inside Dr
 
 ## 2. Open up a terminal window…
 … and run the following command:
+
 ```
 cd /Users/{{username}}/Library/Application\ Support/com.bohemiancoding.sketch3/
 ```
+
 Don’t forget to replace `{{username}}` with your OS X alias. You should now be able to see folders like _Plugins_ and _Templates_, if you run `ls -la`.
 
 ## 3. Rename your _Templates_ folder
@@ -42,5 +44,3 @@ This is a simple process to keep files synced for other programs, not just Sketc
 
 ### Resources:
 * [Use symbolic links in a Dropbox folder](http://hints.macworld.com/article.php?story=20120803093247391)
-
-
