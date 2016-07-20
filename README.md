@@ -16,6 +16,7 @@
   - Check [Collections](https://jekyllrb.com/docs/collections/)
   - Common post footer, with things like "Come talk to me about this on Twitter"
   - [Pagination](https://teamtreehouse.com/library/build-a-blog-with-jekyll-and-github-pages/building-and-customizing-the-blog/adding-pagination)
+  - Update Blaggregator
 - 3rd stage
   - Improve print stylesheet
   - Implement [Twitter’s card](https://dev.twitter.com/cards/overview)
