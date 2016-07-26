@@ -31,6 +31,7 @@
 - Clean, simple footer like GitHub
 - Photo at the footer, like [Jay](http://jaybowl.es/Blog/WabiSabi.html)
 - Top border, http://www.benedikt-lehnert.de/blog/goodbye-wunderlist-hello-outlook
+- https://github.com/github/pages-gem#github-pages-ruby-gem
 
 ## Credits
 - SVG social icons by [Font Awesome](https://github.com/encharm/Font-Awesome-SVG-PNG/tree/master/black/svg)
