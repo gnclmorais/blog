@@ -7,3 +7,5 @@ layout: post
 
 Why this article?
 - Documentation lacking or confusing
+
+https://help.github.com/articles/setting-up-a-custom-subdomain/
