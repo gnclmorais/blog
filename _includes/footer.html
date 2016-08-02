@@ -16,7 +16,7 @@
       {% include icons/dribbble.html username=site.dribbble_username %}
     {% endif %}
 
-    <img class="avatar-rounded" src="{{ site.baseurl | prepend: site.url }}/images/avatar.jpg" title="Gonçalo Morais" alt="">
+    <img class="avatar-rounded" src="{{ "images/avatar.jpg" | prepend: site.baseurl | prepend: site.url }}" title="Gonçalo Morais" alt="">
 
     {% if site.spotify_username %}
       {% include icons/spotify.html username=site.spotify_username %}

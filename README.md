@@ -44,3 +44,5 @@
 - [Basehold.it](http://basehold.it/) from [Dan Eden](https://twitter.com/_dte) and [Michael Wright](https://twitter.com/michaelw90)
 - ["Async" CSS without JavaScript](https://codepen.io/tigt/post/async-css-without-javascript) by [Taylor Hunt](https://codepen.io/tigt/)
 - [How To Get Your Jekyll + GitHub Pages Website to Pass Google's PageSpeed Tests](http://chrishallahan.com/2015/12/28/pass-google-pagespeed-performance-test.html) by [Christopher Hallahan](https://twitter.com/challahan)
+
+dig blog.gnclmorais.com +nostats +nocomments +nocmd
