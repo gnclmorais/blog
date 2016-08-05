@@ -31,9 +31,11 @@ This is the folder we are going to replace with a synced version, so make sure y
 
 ## 4. Create the symbolic link
 Now that you are in the right place and have all that you need, run the following command:
+
 ```
 ln -s {{Dropbox_folder_path}} Templates
 ```
+
 Replace the `Dropbox_folder_path` above with the path of the shared folder you have in Dropbox. This simply creates a symbolic link called _Templates_ that points to your original shared folder, where your important files are up to date.
 
 ![Mathematical!](http://media.tumblr.com/tumblr_meojs73rGS1r6h22v.gif)
