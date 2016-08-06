@@ -21,10 +21,10 @@ Pick where you want that folder to be and create it (as long as it’s inside Dr
 … and run the following command:
 
 ```
-cd /Users/{{username}}/Library/Application\ Support/com.bohemiancoding.sketch3/
+cd /Users/<username>/Library/Application\ Support/com.bohemiancoding.sketch3/
 ```
 
-Don’t forget to replace `{{username}}` with your OS X alias. You should now be able to see folders like _Plugins_ and _Templates_, if you run `ls -la`.
+Don’t forget to replace `<username>` with your OS X alias. You should now be able to see folders like _Plugins_ and _Templates_, if you run `ls -la`.
 
 ## 3. Rename your _Templates_ folder
 This is the folder we are going to replace with a synced version, so make sure you rename it (or you can even delete it, if it’s empty).
@@ -33,10 +33,10 @@ This is the folder we are going to replace with a synced version, so make sure y
 Now that you are in the right place and have all that you need, run the following command:
 
 ```
-ln -s {{Dropbox_folder_path}} Templates
+ln -s <Dropbox_folder_path> Templates
 ```
 
-Replace the `Dropbox_folder_path` above with the path of the shared folder you have in Dropbox. This simply creates a symbolic link called _Templates_ that points to your original shared folder, where your important files are up to date.
+Replace the `<Dropbox_folder_path>` above with the path of the shared folder you have in Dropbox. This simply creates a symbolic link called _Templates_ that points to your original shared folder, where your important files are up to date.
 
 ![Mathematical!](http://media.tumblr.com/tumblr_meojs73rGS1r6h22v.gif)
 
