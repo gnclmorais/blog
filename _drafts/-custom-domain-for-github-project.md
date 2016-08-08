@@ -1,6 +1,6 @@
 ---
 title: 'Add a custom domain to your GitHub project page'
-date:
+date: 2014-12-04 00:00:00
 tags: github
 layout: post
 ---
