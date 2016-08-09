@@ -43,6 +43,8 @@ The way I see it, every time you want to solve a problem recursively, there are 
 
 
 ## Base case
+
+This is basically your stop criteria.
 - gets to a trivial value without recursion
 - it's basically a stoping condition
 - if there isn't a clear one, you create one, like "number of times to execute"
