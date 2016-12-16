@@ -21,6 +21,7 @@
   - Improve print stylesheet
   - Implement [Twitter’s card](https://dev.twitter.com/cards/overview)
   - RC recruit on the blog or main page
+  - Check Fira
 
 ## Resources & inspiration
 - http://v1.jontangerine.com/silo/typography/p/
