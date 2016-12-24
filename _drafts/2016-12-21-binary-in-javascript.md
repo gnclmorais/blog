@@ -9,7 +9,7 @@ _This article is based on a [lightning talk](https://www.youtube.com/watch?v=Qyh
 
 ---
 
-I’m not entirely sure about how many web developers know about (and even use) this, but JavaScript is capable of binary. 0s and 1s can easily be manipulated with out favourite language and that’s what I’ll briefly discuss on this post.
+I’m not entirely sure about how many web developers know about (or even use) it, but JavaScript is capable of binary. 0s and 1s can easily be manipulated with bitwise operators on our favourite language and that’s what I’ll present on this post.
 
 First of all, _why?_ Why would you care about this? In several years of web development, you probably never had the need to use any of these binary operations, so why are you even reading this?
 
