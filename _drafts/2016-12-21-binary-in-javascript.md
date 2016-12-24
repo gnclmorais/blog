@@ -11,9 +11,9 @@ _This article is based on a [lightning talk](https://www.youtube.com/watch?v=Qyh
 
 I’m not entirely sure about how many web developers know about (or even use) it, but JavaScript is capable of binary. 0s and 1s can easily be manipulated with bitwise operators on our favourite language and that’s what I’ll present on this post.
 
-First of all, _why?_ Why would you care about this? In several years of web development, you probably never had the need to use any of these binary operations, so why are you even reading this?
+First of all, _why?_ Why would you care about this? In your years of web development, you probably never had the need to use any of these operations, so why are you even reading this? OMG is it one more thing to know and add to my [JavaScript fatigue](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.d36qvkc5h)??
 
-This article will be a brief introduction to the available operations, but I can already point you out to a [great example](https://danthedev.com/2015/07/25/binary-in-javascript) from [Dan Prince](https://twitter.com/_danprince). In short, he was able to greatly reduce the memory footprint of a game we was developing using binary operators. He was operating on a 512x512 pixel matrix, with an Plain Old JavaScript Object representing each pixel. However, using just the strictly necessary bits to save justenough information, each object was replaced by an integer, reducing the memory consumption four times!
+Don’t worry, this is just a piece of curiosity. Please keep reading if you love quirks! This article will be a brief introduction to the available bitwise operations, but I can already recommend you a [great post](https://danthedev.com/2015/07/25/binary-in-javascript) from [Dan Prince](https://twitter.com/_danprince). In short, he was able to greatly reduce the memory footprint of a game we was developing using bitwise operators. He was working on a 512x512 pixel matrix, using Plain Old JavaScript Objects to represent each pixel. However, using just the strictly necessary bits to save the game’s state, each object was replaced by an integer, reducing the memory consumption four times! You’ll find more info in his blog post.
 
 
 ## A few technicalities first
@@ -21,7 +21,7 @@ This article will be a brief introduction to the available operations, but I can
 Let me quickly brief you on a few important technical details about how JavaScript deals with numbers and binary operators.
 
 ### Numbers are stored using 64 bits
-Basically, numbers in JavaScript are all floating point. A single bit for sign (0 for positive and 1 for negative numbers), 11 bits exponent bits to indicate where the point is, and finally 52 bits representing the actual digits of the number
+Basically, all numbers in JavaScript are floating point. A single bit for sign (0 for positive and 1 for negative numbers), 11 bits exponent bits to indicate where the point is, and finally 52 bits representing the actual digits of the number
 
 ```
    sign | exponent | fraction
@@ -30,7 +30,7 @@ Basically, numbers in JavaScript are all floating point. A single bit for sign (
 ```
 
 ### Numbers with more than 32 bits get truncated
-That means that, from the 64 bits you read on the previous line, we’ll only keep the 32 at the right (i.e. the least significant). The sign bit is dropped as well, so negative numbers become positive, for example.
+It means that, from the 64 bits you read on the previous paragraph, we’ll only keep the 32 at the right (i.e. the least significant).
 
 ```js
                                    // 15872588537857
@@ -44,10 +44,25 @@ parseInt(a, 2);
 // 4294967291
 ```
 
+### Bitwise operations are performed on pairs of bits
+This means that each bit in the first operand is paired with the corresponding bit in the second operand. Example:
+
+```js
+// Using only eight bits here for illustration purposes:
+var a = 9; // 0000 1001
+var b = 5; // 0000 0101
+
+a & b -> a // 0000 1001
+              &&&& &&&&
+         b // 0000 0101
+              ---------
+              0000 0001 -> 1 (base 10)
+```
+
 
 ## Bitwise operators
 
-JavaScript has seven binary operators, which I’ll briefly present and explain. All of them convert their operands to 32-bit numbers, as previously stated.
+JavaScript has seven bitwise operators, all of them convert their operands to 32-bit numbers.
 
 ### `&` (AND)
 ```
@@ -63,7 +78,7 @@ Simply speaking, `&` results in `0` if there is at least one `0`.
 
 ### `|` (OR)
 ```
-| a | b | a / b |
+| a | b | a | b |
 |---|---|-------|
 | 0 | 0 |   0   |
 | 0 | 1 |   1   |
@@ -107,7 +122,7 @@ console.log(b); // 1 (0001)
 ![Mind. Blown.](http://mrwgifs.com/wp-content/uploads/2013/11/Finns-Mind-Is-Blown-In-Space-On-Adventure-Time.gif)
 
 ### `~` (NOT)
-`NOT` operator simply inverts all the bits, including the sign. It’s like inverting the colours of an image, only simpler.
+`NOT` operator simply inverts all the bits, including the sign. It’s like inverting the colours of an image.
 
 ```
  9 = 00000000000000000000000000001001
@@ -146,7 +161,7 @@ Applying `~` on any number x results on -(x + 1). In the example above, ~9 yield
 
 ### `>>>` (Zero-fill) right shift
 
-`>>>` is a specific case of right shift, where the new bits coming from the left towards the right are always 0, independent of the sign of the number.
+`>>>` is a specific case of right shift, where the new bits coming from the left towards the right are always 0, independent of the sign of the number. A consequence of it is that it turns any negative number into positive.
 
 ```
  9       : 0000 0000 1001
