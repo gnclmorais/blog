@@ -1,6 +1,6 @@
 ---
 title: 'Binary in JavaScript'
-date: 2016-12-18 00:00:00
+date: 2016-12-24 00:00:00
 tags: binary javascript
 layout: post
 ---
@@ -18,10 +18,10 @@ Don’t worry, this is just a piece of curiosity. Please keep reading if you lov
 
 ## A few technicalities first
 
-Let me quickly brief you on a few important technical details about how JavaScript deals with numbers and binary operators.
+Let me quickly tell you a few important technical details about how JavaScript deals with numbers and binary operators.
 
 ### Numbers are stored using 64 bits
-Basically, all numbers in JavaScript are floating point. A single bit for sign (0 for positive and 1 for negative numbers), 11 bits exponent bits to indicate where the point is, and finally 52 bits representing the actual digits of the number
+Basically, all numbers in JavaScript are floating point. A single bit for sign (0 for positive and 1 for negative numbers), 11 bits exponent bits to indicate where the point is, and finally 52 bits representing the actual digits of the number.
 
 ```
    sign | exponent | fraction
@@ -45,7 +45,7 @@ parseInt(a, 2);
 ```
 
 ### Bitwise operations are performed on pairs of bits
-This means that each bit in the first operand is paired with the corresponding bit in the second operand. Example:
+Operations are performed by pairing up each bit in the first operand with the corresponding bit in the second operand. Example:
 
 ```js
 // Using only eight bits here for illustration purposes:
@@ -98,7 +98,7 @@ In the case of `|`, the output will be `1` if there is at least one `1`.
 | 1 | 1 |   0   |
 ```
 
-Different bits will result in `1`, simply put. I must admit XOR is my favourite, there’s a case where it works just like magic. 10 points to whoever knows what the following code does:
+Different bits will result in `1`, simply put. I must admit XOR is my favourite, it can be quite baffling. 10 points to whoever knows what the following code does:
 
 ```js
 var a = 1, b = 2;
@@ -178,14 +178,13 @@ Applying `~` on any number x results on -(x + 1). In the example above, ~9 yield
 
 ## Fun with bitwise operators
 
-So what can we do with these operators? Given their quirks and properties, let’s see some weirdness in action. A lot of these quirks result from the transformation from 64-bit to 32-bit.
-
-I’ll show you some simple examples now, but I can’t stress enough for you to check out Dan Prince’s [blog post](https://danthedev.com/2015/07/25/binary-in-javascript) about he used these bitwise operators to reduce the memory footprint of one of his games.
+So what can we do with these operators? Given their quirks and behaviour, let’s see some weirdness in action. A lot of these quirks stem from the transformation from 64-bit to 32-bit.
 
 ### Truncate numbers
 
 ```js
-var a = 3.14, b = -3.14;
+var a =  3.14;
+var b = -3.14;
 console.log(a & a, b & b); //  3, -3
 console.log(a | 0, b | 0); //  3, -3
 console.log(~~a, ~~b);     //  3, -3
@@ -194,11 +193,13 @@ console.log(~~a, ~~b);     //  3, -3
 ### Convert strings to numbers, emulating `parseInt`
 
 ```js
-var a = '15' >>> 0, b = '15.4' >>> 0;
+var a = '15' >>> 0;
+var b = '15.4' >>> 0;
 console.log(a, b); // 15, 15
 
 var c = '3.14';
-var d = c | 0, e = c & c;
+var d = c | 0;
+var e = c & c;
 console.log(d, e); // 3, 3
 ```
 
@@ -229,21 +230,13 @@ if (~string.indexOf(substr)) {
 ```
 
 
-## So… should you use this? Is this production safe?
+## So… should you use this?
 
-Short answer… no.
+Short answer… no.  
+Long answer… it depends. As you’ve seen, there are a lot of gotchas and quirks people need to be aware of when using this. You need to know the variable types you’re dealing with, and that’s hard(er) to do in a dynamically typed language like JavaScript. You wouldn’t want to accidentally truncate numbers with decimals or make a negative number positive.
 
-Long answer… it depends. As you’ve seen, there are a lot of gotchas and quirks people need to be aware of when using this. You need to know the variable types you’re dealing with, and that’s hard(er) to do in a dynamically typed language like JavaScript.
+Other issue you should have in consideration is the consequent code obfuscation when you decide to write `x << 1` instead or `x * 2`, for example. However, this might be a compromise you are willing to do, which becomes pretty manageable with wrappers like [tiny-binary-format](https://github.com/danprince/tiny-binary-format).
 
-Other issue you should have in consideration is the consequent obfuscation you are performing when you decide to user `x << 1` instead or `x * 2`, for example. However, this might be a compromise you are willing to do, which becomes pretty manageable with a small wrapper layer like [TODO: Insert example of tiny-bit-etc]().
+Finally, keep in mind that [Douglas Crockford doesn’t like it](http://stackoverflow.com/questions/1908492/unsigned-integer-in-javascript/1909320#1909320), considering it one of the bad parts of JavaScript.
 
-Finally, [Douglas Crockford doesn’t like it](http://stackoverflow.com/questions/1908492/unsigned-integer-in-javascript/1909320#1909320).
-
-__However__, you might ask _‘What about for side projects or very specific cases?’_ For this, I say, __Why not?__
-
-I write JavaScript for fun on my side projects, and in those cases I like to do different things than I do on my daily job. If that revolves around shifting bits left & right, good for you! I say keep your code weird and interesting — and learn something on the way.
-
-## Resources
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
-- http://www.2ality.com/2014/01/binary-bitwise-operators.html
-- http://www.2ality.com/2012/04/number-encoding.html
+__However__, for side projects or applications where you need to squeeze more out of the hardware you are working on, why not? I write JavaScript for fun on my personal projects, and in those cases I like to do different things than I do on my daily job. If that involves shifting bits left & right, good for you! Keep your code weird and interesting — and learn something along the way.
