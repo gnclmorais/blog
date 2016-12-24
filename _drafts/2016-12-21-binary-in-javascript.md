@@ -5,13 +5,13 @@ tags: binary javascript
 layout: post
 ---
 
-_This article is based on a lightning talk I recently did at [dotJS](http://2016.dotjs.io/) and it was written for [Mariko](https://twitter.com/kosamari)’s [Web Advent Calendar](http://web.advent.today). Check all the other interesting articles, specially [Pam’s](http://thewebivore.com/async-await-and-why-its-great/) and [Ricardo’s](http://blog.ricardofilipe.com/post/light-my-house)!_
+_This article is based on a [lightning talk](https://www.youtube.com/watch?v=Qyh_QcgotUY&hd=1) I recently did at dotJS and it was written for [Mariko](https://twitter.com/kosamari)’s [Web Advent Calendar](http://web.advent.today). Check all the other interesting articles, specially [Pam’s](http://thewebivore.com/async-await-and-why-its-great/) and [Ricardo’s](http://blog.ricardofilipe.com/post/light-my-house)!_
 
 ---
 
 I’m not entirely sure about how many web developers know about (and even use) this, but JavaScript is capable of binary. 0s and 1s can easily be manipulated with out favourite language and that’s what I’ll briefly discuss on this post.
 
-First of all, _why_? Why would you care about this? In several years of web development, you probably never had the need to use any of these binary operations, so why are you even reading this?
+First of all, _why?_ Why would you care about this? In several years of web development, you probably never had the need to use any of these binary operations, so why are you even reading this?
 
 This article will be a brief introduction to the available operations, but I can already point you out to a [great example](https://danthedev.com/2015/07/25/binary-in-javascript) from [Dan Prince](https://twitter.com/_danprince). In short, he was able to greatly reduce the memory footprint of a game we was developing using binary operators. He was operating on a 512x512 pixel matrix, with an Plain Old JavaScript Object representing each pixel. However, using just the strictly necessary bits to save justenough information, each object was replaced by an integer, reducing the memory consumption four times!
 
@@ -44,11 +44,10 @@ parseInt(a, 2);
 // 4294967291
 ```
 
-### Binary operations are fine for integers…
-… but not so much for other types. You’ll see what I mean by this soon.
 
+## Bitwise operators
 
-## Binary operators
+JavaScript has seven binary operators, which I’ll briefly present and explain. All of them convert their operands to 32-bit numbers, as previously stated.
 
 ### `&` (AND)
 ```
@@ -160,6 +159,41 @@ Applying `~` on any number x results on -(x + 1). In the example above, ~9 yield
            ^^
            new bits
 ```
+
+
+## Fun with bitwise operators
+
+So what can we do with these operators? Given their quirks and properties, let’s see some weirdness in action.
+
+I’ll show you some simple examples now, but I can’t stress enough for you to check out Dan Prince’s [blog post](https://danthedev.com/2015/07/25/binary-in-javascript) about he used these bitwise operators to reduce the memory footprint of one of his games.
+
+### Truncate numbers
+
+```js
+var a = 3.14, b = -3.14;
+console.log(a & a, b & b); //  3, -3
+console.log(a | 0, b | 0); //  3, -3
+console.log(~~a, ~~b);     //  3, -3
+```
+
+### Convert strings to numbers, emulating `parseInt`
+
+```js
+var a = '15' >>> 0;
+console.log(a, typeof a); // 15, 'number'
+var b = '15.4' >>> 0;
+console.log(b, typeof b); // 15, 'number'
+```
+
+### Multiply a number by multiples of 2
+
+```js
+console.log(7 << 1); // 7 * 2 * 1 = 14
+console.log(7 << 2); // 7 * 2 * 2 = 28
+console.log(7 << 3); // 7 * 2 * 3 = 56
+// …
+```
+
 
 ## So… should you use this? Is this production safe?
 
