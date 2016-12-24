@@ -21,7 +21,7 @@ This article will be a brief introduction to the available operations, but I can
 Let me quickly brief you on a few important technical details about how JavaScript deals with numbers and binary operators.
 
 ### Numbers are stored using 64 bits
-Basically, numbers in JavaScript are all floating point. One bit for sign (0 for positive and 1 for negative numbers), 11 bits exponent bits to indicate where the point is, and finally 52 bits representing the actual digits of the number
+Basically, numbers in JavaScript are all floating point. A single bit for sign (0 for positive and 1 for negative numbers), 11 bits exponent bits to indicate where the point is, and finally 52 bits representing the actual digits of the number
 
 ```
    sign | exponent | fraction
@@ -163,7 +163,7 @@ Applying `~` on any number x results on -(x + 1). In the example above, ~9 yield
 
 ## Fun with bitwise operators
 
-So what can we do with these operators? Given their quirks and properties, let’s see some weirdness in action.
+So what can we do with these operators? Given their quirks and properties, let’s see some weirdness in action. A lot of these quirks result from the transformation from 64-bit to 32-bit.
 
 I’ll show you some simple examples now, but I can’t stress enough for you to check out Dan Prince’s [blog post](https://danthedev.com/2015/07/25/binary-in-javascript) about he used these bitwise operators to reduce the memory footprint of one of his games.
 
@@ -179,10 +179,12 @@ console.log(~~a, ~~b);     //  3, -3
 ### Convert strings to numbers, emulating `parseInt`
 
 ```js
-var a = '15' >>> 0;
-console.log(a, typeof a); // 15, 'number'
-var b = '15.4' >>> 0;
-console.log(b, typeof b); // 15, 'number'
+var a = '15' >>> 0, b = '15.4' >>> 0;
+console.log(a, b); // 15, 15
+
+var c = '3.14';
+var d = c | 0, e = c & c;
+console.log(d, e); // 3, 3
 ```
 
 ### Multiply a number by multiples of 2
@@ -192,6 +194,23 @@ console.log(7 << 1); // 7 * 2 * 1 = 14
 console.log(7 << 2); // 7 * 2 * 2 = 28
 console.log(7 << 3); // 7 * 2 * 3 = 56
 // …
+```
+
+### Different sub-string search
+```js
+var string = 'javacript';
+var substr = 'java';
+
+// If the sub-string is found,
+// appying NOT to the index will return a negative number,
+// which is a truthy value;
+// If not found, `indexOf` will return -1,
+// which in turn ~(-1) == 0, into the `else` case.
+if (~string.indexOf(substr)) {
+  // Found the sub-string!
+} else {
+  // Nope, no match
+}
 ```
 
 
@@ -210,5 +229,6 @@ __However__, you might ask _‘What about for side projects or very specific cas
 I write JavaScript for fun on my side projects, and in those cases I like to do different things than I do on my daily job. If that revolves around shifting bits left & right, good for you! I say keep your code weird and interesting — and learn something on the way.
 
 ## Resources
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
 - http://www.2ality.com/2014/01/binary-bitwise-operators.html
 - http://www.2ality.com/2012/04/number-encoding.html
