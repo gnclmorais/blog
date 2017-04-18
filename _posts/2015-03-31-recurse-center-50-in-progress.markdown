@@ -4,7 +4,7 @@ date: 2015-03-31 00:00:00
 tags: nyc hacker-school recurse-center
 layout: post
 ---
-![Panoramic view of Recurse Center](/blog/images/posts/rc_panoramic.jpg)
+![Panoramic view of Recurse Center](/images/posts/rc_panoramic.jpg)
 
 Most of the people close to me know that I left London almost two months ago and crossed the ocean towards New York to enroll in the Spring 1 batch of the Recurse Center ([formerly Hacker School](https://www.recurse.com/blog/77-hacker-school-is-now-the-recurse-center)). Having reached half of the time I’ll spend in the USA, it’s a good point to do some balance.
 

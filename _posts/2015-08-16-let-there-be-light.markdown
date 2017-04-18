@@ -11,19 +11,19 @@ I’ve been increasingly drawn to lighter colour themes, I’ve noticed they eas
 However, there is not much love for light themes. They are not as popular, not as well crafted as dark themes, and people usually overlook them. I don’t get exactly why, but I’ve been preaching the advantages of brighter colour schemes for months now. So, for future reference (yours, and mine as well), here are my __my favourite light themes for Sublime Text__:
 
 ## [Piatto](https://packagecontrol.io/packages/Theme%20-%20Piatto)
-![](/blog/images/posts/let-there-be-light-piatto.png)
+![](/images/posts/let-there-be-light-piatto.png)
 
 ## [Solarized](https://packagecontrol.io/packages/Theme%20-%20Solarized%20Space)
-![](/blog/images/posts/let-there-be-light-solarized.png)
+![](/images/posts/let-there-be-light-solarized.png)
 
 ## [GitHub (from Dayle Rees Color Schemes)](https://packagecontrol.io/packages/Dayle%20Rees%20Color%20Schemes)
-![](/blog/images/posts/let-there-be-light-github.png)
+![](/images/posts/let-there-be-light-github.png)
 
 ## [Clouds](https://packagecontrol.io/packages/Clouds%20Color%20Schemes)
-![](/blog/images/posts/let-there-be-light-clouds.png)
+![](/images/posts/let-there-be-light-clouds.png)
 
 ## [Spacegray](https://packagecontrol.io/packages/Theme%20-%20Spacegray)
-![](/blog/images/posts/let-there-be-light-spacegray.png)
+![](/images/posts/let-there-be-light-spacegray.png)
 
 Some of these colour schemes also bring UI themes, so check them out as well! The one I’m using came with Piatto (also light, _Piatto Light 3.sublime-theme_).
 
