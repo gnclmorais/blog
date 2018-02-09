@@ -17,7 +17,7 @@ The reason `2.toString()` doesn’t work in JavaScript but `2..toString()` works
 The explanation for this quirky behaviour seems to be connected with the JavaScript parser, which acts in a **greedy** way, i.e., it tries to match the longest valid operator each time. In this case, as it parses and evaluates character by character, when it reads the number `2` it expects to be parsing a number, so `2` is valid. The next character, `.`, is also valid in a number (_decimal_ number, but still, valid). Now the following character, `t`, is not valid in a number, so an error is thrown:  
 `Uncaught SyntaxError: Invalid or unexpected token`.
 
-In the second case, `2..toString()`, it processes everything the same way but, when it runs into the second dot, it knows it cannot be a number since it found one dot before, the decimal separator. So the number it has so far (`2.`) gets converted to a `Number` (`2.0` which is `2`) and them `toString` is called on it, finally returning `"2"`. A simple way to allow a `toString()` invocation on a number would be to wrap that number with parentheses, clearly encapsulating the number evaluation: `(2).toString()`.
+In the second case, `2..toString()`, it processes everything the same way but, when it runs into the second dot, it knows it cannot be a number since it found one dot before, the decimal separator. So the number it has so far (`2.`) gets converted to a `Number` (`2.0` which is `2`) and then `toString` is called on it, finally returning `"2"`. A simple way to allow a `toString()` invocation on a number would be to wrap that number with parentheses, clearly encapsulating the number evaluation: `(2).toString()`.
 
 Basilly, `2..toString()` is the same as having `2.0.toString()`:
 
