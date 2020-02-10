@@ -24,7 +24,7 @@ console.log(typeof greeting); // string
 
 When I first encountered this, I couldn’t really explain it. It’s one of those things that, even thought you’ve been working with JavaScript for a while, might caught you off-guard.
 
-I’m a bit more knowledgeable now so the code above makes some sense. I’m not going to write a full blown article about hosting in JavaScript, but I’ll point you to an excellent one by Scotch.io, [Understanding Hoisting in JavaScript][hoisting]. Nevertheless, I’ll try to explain what’s happening in the snippet above, because if you can’t explain something, you don’t understand it that well.
+I’m a bit more knowledgeable now so the code above makes some sense. I’m not going to write a full blown article about hoisting in JavaScript, but I’ll point you to an excellent one by Scotch.io, [Understanding Hoisting in JavaScript][hoisting]. Nevertheless, I’ll try to explain what’s happening in the snippet above, because if you can’t explain something, you don’t understand it that well.
 
 `function greeting ()` is a **function declaration**, which takes precedence over the **variable declaration** performed right before it (`var greeting;`). On the other hand, the second part of the code has a **variable assignment** (`var greeting = "string";`) which takes precedence over the function declaration below it.
 
