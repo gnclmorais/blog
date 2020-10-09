@@ -22,9 +22,9 @@ Recently, I had my introduction to mechanical keyboards. After starting with a s
 
 
 ## Programming the keyboard
-A cool feature of most Vortex keyboards is the ability to program and override almost any key. This especially important on smaller keyboards, like their [Core 40%](https://mechboards.co.uk/shop/keyboards/vortex-core-40-keyboard/), but it’s still quite useful in order to tune a keyboard just for your use case.
+A cool feature of most Vortex keyboards is the ability to program and override almost any key. This is especially important on smaller keyboards, like their [Core 40%](https://mechboards.co.uk/shop/keyboards/vortex-core-40-keyboard/), but it’s still quite useful in order to tune a keyboard just for your use case.
 
-I’ve used their [Pok3r](https://mechboards.co.uk/shop/keyboards/vortex-pok3r-60-keyboard) and it was almost perfect, but the fact it had no dedicated arrow keys (they were only reachable by pressing `Fn` plus other keys) was a deal breaker to me. The Cypher model corrects that and, with a few changes, ticks all the boxes for me. Here’s my current layout (lighter grey highlighting the keys I’ve changed):
+I’ve used a [Pok3r](https://mechboards.co.uk/shop/keyboards/vortex-pok3r-60-keyboard) and it was almost perfect, but the fact it had no dedicated arrow keys was a deal breaker to me(they were only reachable by pressing `Fn` plus other keys). The Cypher model corrects that and, with a few changes, ticks all the boxes for me. Here’s my current layout (lighter grey highlighting the keys I’ve changed):
 
 [![Customised layout](/images/posts/2020-10-09-cypher-layout-custom.png)][custom]
 
