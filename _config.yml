@@ -19,7 +19,7 @@ exclude:
   - 'Makefile'
   - 'README.md'
   - '_config.yml'
-gems:
+plugins:
   - jekyll-feed
 
 # Sass
