@@ -1,5 +1,5 @@
 ---
-title: '`this.something = 'else'` vs `this.set('something', 'else')` in Ember'
+title: "`this.something = 'else'` vs `this.set('something', 'else')` in Ember"
 date: 2021-01-31 00:00:00
 tags: [ember]
 layout: post
