@@ -5,7 +5,7 @@ tags: [ember]
 layout: post
 ---
 
-I’ve been getting deeper into Ember.js in my new job, and I learn something new every day. Sometimes, things you’ve been using here and there are a bit mysterious. Eventually, either you or someone else notices them and raises insightful questions, like Michal asked on [Ember’s Dsicord channel](https://discord.com/channels/480462759797063690/480523424121356298/803933292444909610). The question was basically this:
+I’ve been getting deeper into Ember.js in my new job, and I learn something new every day. Sometimes, things you’ve been using here and there are a bit mysterious. Eventually, either you or someone else notices them and raises insightful questions, like Michal asked on [Ember’s Discord channel](https://discord.com/channels/480462759797063690/480523424121356298/803933292444909610). The question was basically this:
 
 > What’s the difference between `this.something = 'else'` and `this.set('something', 'else')` in tests?
 
