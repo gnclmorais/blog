@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/gnclmorais
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://blog.gnclmorais.com
+  * I am gnclmorais (https://keybase.io/gnclmorais) on keybase.
+  * I have a public key ASCSdjucny8qcjDql7Lcw91lxP6wl4E07jCdw1jIEG7hYgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012092763b9c9f2f2a7230ea97b2dcc3dd65c4feb0978134ee309dc358c8106ee1620a",
+      "host": "keybase.io",
+      "kid": "012092763b9c9f2f2a7230ea97b2dcc3dd65c4feb0978134ee309dc358c8106ee1620a",
+      "uid": "8aa192d6b3cb0c1e835adbc4538cc419",
+      "username": "gnclmorais"
+    },
+    "merkle_root": {
+      "ctime": 1620917089,
+      "hash": "84ab91d7c86ef572187a302ce54c91274672c2386b38e6ce97df7cf4ac548d8e7b77db2a5401df6b99b411937e940f9ceba463311dd618df96e17388e4dbdeb4",
+      "hash_meta": "6927aff75faf24a66302d6e1a632318dcf6ce97158c7f0165bc1fa2b646d372b",
+      "seqno": 19931087
+    },
+    "service": {
+      "entropy": "5axD/OMPSx2UN/va08T3NxsR",
+      "hostname": "blog.gnclmorais.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.2"
+  },
+  "ctime": 1620917126,
+  "expire_in": 504576000,
+  "prev": "cdd78368e2e32b6dbcf0ecaef3b15dbc3ecd1fc97afec0c9aceeab0034690c9a",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgknY7nJ8vKnIw6pey3MPdZcT+sJeBNO4wncNYyBBu4WIKp3BheWxvYWTESpcCCMQgzdeDaOLjK2288Oyu87FdvD7NH8l6/sDJrO6rADRpDJrEIE+94j5p45MxrMX8LPWiA5iM1dBJtL7d+jLMepgFg3w5AgHCo3NpZ8RAKZVdfogAQwXElClpFVPmcc54du3sCWIEpoiro2SW11sCjK9oTjf3mveQ56zNR7FH6hGtNPIbGGrkdA46Q2eZAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGrjKU+MwJnJ6zI9wRPCYS8235lNusLgWG38Lr07F0Qqo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gnclmorais
+
+==================================================================
