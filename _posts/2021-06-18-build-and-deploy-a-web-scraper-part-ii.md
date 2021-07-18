@@ -5,12 +5,11 @@ tags: [javascript, puppeteer]
 layout: post
 ---
 
-_This is the second post of a 4-part project that will show you how to build a web scraper, add notifications, deploy it and make sure it runs regularly. This is the series:_
+_This is the second post of a 3-part project that will show you how to build a web scraper, add notifications, deploy it and make sure it runs regularly. This is the series:_
 
 1. [Write the scraping script](https://blog.gnclmorais.com/build-and-deploy-a-web-scraper)
 1. Add SMS notifications _(this post)_
 1. Deploy and run it automatically _(to be release)_
-1. Bonus: add email notifications _(to be release)_
 
 ---
 
@@ -122,4 +121,4 @@ The backslashes allow us to split a long command into multiple lines, for readab
 
 And that’s it for the time being! You now have a script that send you an SMS with dynamically fetched data.
 
-See you around soon for the second part of this article…
+See you around soon for the third part of this article…
