@@ -13,7 +13,7 @@ _This is the third post of a 3-part project that will show you how to build a we
 
 ---
 
-Welcome back! Now that we have a script that checks a page and we added SMS notifications, let’s make sure we get this up and running — executing out script regularly.
+Welcome back! Now that we have a script that checks a page and we added SMS notifications, let’s make sure we get this up and running — executing our script regularly.
 
 
 ## Create a Heroku account
