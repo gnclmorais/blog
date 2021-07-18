@@ -9,7 +9,7 @@ _This is the first post of a 3-part project that will show you how to build a we
 
 1. Write the scraping script _(this post)_
 1. [Add SMS notifications](https://blog.gnclmorais.com/build-and-deploy-a-web-scraper-part-ii)
-1. Deploy and run it automatically _(to be release)_
+1. [Deploy and run it automatically](https://blog.gnclmorais.com/build-and-deploy-a-web-scraper-part-iii)
 
 ---
 
