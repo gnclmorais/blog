@@ -20,7 +20,7 @@ Welcome back! Now that we have a script that checks a page and we added SMS noti
 
 This tutorial relies on Heroku for the simple fact that it allows us to be abstracted from most server-side hassle and we can focus on the project at hands. If you have the project we’ve been building tracked with Git, this will be smooth.
 
-Make sure you have a Heroku account and install their [CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install). Then [log in](https://devcenter.heroku.com/articles/heroku-cli#getting-started) through it so that you have access to your Heroku account through terminal commands.
+Make sure you have a Heroku account and install their [CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install). Then [log in](https://devcenter.heroku.com/articles/heroku-cli#getting-started) through it so that you have access to your Heroku account using terminal commands.
 
 
 ## Deploy your app
