@@ -19,11 +19,11 @@
   - Update Blaggregator
 - 3rd stage
   - Improve print stylesheet
-  - Implement [Twitter’s card](https://dev.twitter.com/cards/overview)
+  - [x] Implement [Twitter’s card](https://dev.twitter.com/cards/overview)
   - RC recruit on the blog or main page
   - Check Fira
 - backlog
-  - [ ] Fix links when they break into two lines
+  - Fix links when they break into two lines
 
 ## Resources & inspiration
 - http://v1.jontangerine.com/silo/typography/p/

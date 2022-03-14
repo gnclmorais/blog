@@ -3,6 +3,12 @@ title: Crushed by Code
 email: gnclmorais@gmail.com
 description: A (rather technical) blog about (mostly) web development.
 
+# https://ching-wang.io/posts/twitter-card-and-opengraph-with-jekyll
+lang: en_GB
+twitter:
+  username: gnclmorais
+  card: summary
+
 # Social
 twitter_username:   gnclmorais
 github_username:    gnclmorais
@@ -21,6 +27,7 @@ exclude:
   - '_config.yml'
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Sass
 sass:
