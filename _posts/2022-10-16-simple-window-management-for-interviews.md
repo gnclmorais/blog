@@ -1,6 +1,6 @@
 ---
 title: 'Simple window management for interviews'
-date: 2022-07-15 00:00:00
+date: 2022-10-16 00:00:00
 tags: interviewing remote
 layout: post
 ---
