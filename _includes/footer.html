@@ -8,12 +8,12 @@
       {% include icons/github.html username=site.github_username %}
     {% endif %}
 
-    {% if site.twitter_username %}
-      {% include icons/twitter.html username=site.twitter_username %}
+    {% if site.mastodon_link %}
+      {% include icons/mastodon.html link=site.mastodon_link %}
     {% endif %}
 
-    {% if site.dribbble_username %}
-      {% include icons/dribbble.html username=site.dribbble_username %}
+    {% if site.twitter_username %}
+      {% include icons/twitter.html username=site.twitter_username %}
     {% endif %}
 
     <img class="avatar-rounded" src="{{ "/images/avatar.jpg" | prepend: site.baseurl | prepend: site.url }}" title="Gonçalo Morais" alt="">

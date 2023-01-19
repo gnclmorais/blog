@@ -15,7 +15,7 @@ So, picking up [Ghost](https://ghost.org) and developing my own (simple) theme w
 - [Ghost](https://ghost.org) is a new & shiny blogging platform, and I’m fond of it mainly because of its content focus.
 - More than employing an already existing Ghost theme, I wanted to build my own and use it as a test bed for applying tools, benchmarks and improvements I might found interesting to play with. So [this theme](https://github.com/gnclmorais/Noir) is very much _not_ optimised on purpose, so I can fiddle with it and write here about it.
 
-Outside this blog, you can find me virtually everywhere. The main places are [Twitter](https://twitter.com/gnclmorais), [GitHub](https://github.com/gnclmorais) & [Dribbble](https://dribbble.com/gnclmorais) for cool, techy stuff, and [Instagram](https://instagram.com/gnclmorais) & [Spotify](https://play.spotify.com/user/gnclmorais) for more personal stuff. Enjoy!
+Outside this blog, you can find me virtually everywhere. The main places are [Mastodon](https://indieweb.social/@gnclmorais), [Twitter](https://twitter.com/gnclmorais), [GitHub](https://github.com/gnclmorais) & [Dribbble](https://dribbble.com/gnclmorais) for cool, techy stuff, and [Instagram](https://instagram.com/gnclmorais) & [Spotify](https://play.spotify.com/user/gnclmorais) for more personal stuff. Enjoy!
 
 ---
 
