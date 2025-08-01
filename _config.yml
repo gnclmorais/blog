@@ -11,10 +11,10 @@ twitter:
 
 # Social
 github_username:    gnclmorais
-twitter_username:   gnclmorais
-mastodon_link:      https://indieweb.social/@gnclmorais
 instagram_username: gnclmorais
-spotify_username:   gnclmorais
+mastodon_link:      https://indieweb.social/@gnclmorais
+tidal_username:     gnclmorais
+twitter_username:   gnclmorais
 
 # Build settings
 markdown: kramdown
