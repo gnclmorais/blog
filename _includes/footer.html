@@ -17,12 +17,17 @@
     {% include icons/rss.html %}
 
     <a href="https://notbyai.fyi" target="_blank" rel="noreferrer" class="not-by-ai">
-      <img
-        src="{{ '/images/notbyai/Authored-By-a-Human-Not-By-AI-Badge-white.png' | prepend: site.baseurl | prepend: site.url }}"
-        srcset="{{ '/images/notbyai/Authored-By-a-Human-Not-By-AI-Badge-white.png' | prepend: site.baseurl | prepend: site.url }} 1x, {{ '/images/notbyai/Authored-By-a-Human-Not-By-AI-Badge-white@2x.png' | prepend: site.baseurl | prepend: site.url }} 2x"
-        alt="Authored by a human, not by AI"
-        loading="lazy"
-      >
+      <picture>
+        <source
+          srcset="{{ '/images/notbyai/Authored-By-a-Human-Not-By-AI-Badge-white@2x.png' | prepend: site.baseurl }} 2x, {{ '/images/notbyai/Authored-By-a-Human-Not-By-AI-Badge-white.png' | prepend: site.baseurl }} 1x"
+          type="image/png"
+        >
+        <img
+          src="{{ '/images/notbyai/Authored-By-a-Human-Not-By-AI-Badge-white.png' | prepend: site.baseurl }}"
+          alt="Authored by a human, not by AI"
+          loading="lazy"
+        >
+      </picture>
     </a>
   </div>
 </footer>
