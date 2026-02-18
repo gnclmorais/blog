@@ -9,6 +9,9 @@
   - [x] Improved link looks
   - [x] CSS minification
 - 2nd stage
+  - [x] Add styling for draft posts
+  - [x] Add [Not By AI](https://notbyai.fyi) footer image
+  - [ ] Replace Google Analytics with https://umami.is or https://plausible.io
   - [x] Async CSS loading
   - Sub-titles as anchors
   - Links/anchors at the bottom, like references

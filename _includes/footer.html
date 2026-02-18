@@ -1,9 +1,7 @@
 <footer class="site-footer">
-  <div class="tagline">
-    Hi, I’m Gonçalo!
-  </div>
+  <div class="site-footer__content wrapper u-footer-spacing">
+    <img class="avatar-rounded" src="{{ '/images/avatar.jpg' | prepend: site.baseurl | prepend: site.url }}" title="Gonçalo Morais" alt="" loading="lazy">
 
-  <div class="wrapper u-footer-spacing">
     {% if site.github_username %}
       {% include icons/github.html username=site.github_username %}
     {% endif %}
@@ -16,16 +14,15 @@
       {% include icons/twitter.html username=site.twitter_username %}
     {% endif %}
 
-    <img class="avatar-rounded" src="{{ "/images/avatar.jpg" | prepend: site.baseurl | prepend: site.url }}" title="Gonçalo Morais" alt="">
-
-    {% if site.tidal_username %}
-      {% include icons/tidal.html username=site.tidal_username %}
-    {% endif %}
-
-    {% if site.instagram_username %}
-      {% include icons/instagram.html username=site.instagram_username %}
-    {% endif %}
-
     {% include icons/rss.html %}
+
+    <a href="https://notbyai.fyi" target="_blank" rel="noreferrer" class="not-by-ai">
+      <img
+        src="{{ '/images/notbyai/Authored-By-a-Human-Not-By-AI-Badge-white.png' | prepend: site.baseurl | prepend: site.url }}"
+        srcset="{{ '/images/notbyai/Authored-By-a-Human-Not-By-AI-Badge-white.png' | prepend: site.baseurl | prepend: site.url }} 1x, {{ '/images/notbyai/Authored-By-a-Human-Not-By-AI-Badge-white@2x.png' | prepend: site.baseurl | prepend: site.url }} 2x"
+        alt="Authored by a human, not by AI"
+        loading="lazy"
+      >
+    </a>
   </div>
 </footer>

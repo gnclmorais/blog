@@ -171,7 +171,6 @@ blockquote {
   @include content-wrap;
 
   color: $colour-dark-primary;
-  text-align: center;
   padding: $font-unit 0;
   vertical-align: middle;
 
@@ -185,15 +184,13 @@ blockquote {
     }
   }
 }
-
-
-/** (Mobile) tagline */
-.tagline {
-  margin-bottom: 15px;
-
-  @media (min-width: 800px) {
-    display: none;
-  }
+.site-footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+  margin: 0 30px;
 }
 
 
@@ -203,12 +200,10 @@ blockquote {
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
-  // TODO: Improve
   box-shadow: 0px 0px 15px whitesmoke;
   padding: 0;
-  margin: 15px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 500px) {
     display: none;
   }
 }
@@ -220,6 +215,12 @@ blockquote {
     width: 30px;
     vertical-align: middle;
   }
+}
+
+.not-by-ai {
+  height: 42px;
+  width: auto;
+  margin-left: auto;
 }
 
 /**
