@@ -191,6 +191,10 @@ blockquote {
   align-items: center;
   gap: 15px;
   margin: 0 30px;
+
+  @media (max-width: 500px) {
+    justify-content: center;
+  }
 }
 
 
@@ -220,7 +224,10 @@ blockquote {
 .not-by-ai {
   height: 42px;
   width: auto;
-  margin-left: auto;
+
+  @media (min-width: 500px) {
+    margin-left: auto;
+  }
 }
 
 /**
