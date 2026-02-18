@@ -230,6 +230,11 @@ blockquote {
   text-align: center;
 }
 
+.post-list__item--draft {
+  opacity: .25;
+  font-style: italic;
+}
+
 /**
  * Post tags lists
  */

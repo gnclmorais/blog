@@ -15,7 +15,7 @@ layout: default
   {% else %}
     <ul class="post-list">
       {% for post in site.posts %}
-        <li>
+        <li class="post-list__item {% if post.draft %}post-list__item--draft{% endif %}">
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
               {{ post.title | xml_escape | textilize }}
